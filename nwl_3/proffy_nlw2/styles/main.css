@@ -1,0 +1,73 @@
+/*Cascading Style Sheets*/
+/*root - elemento raiz da minha página inteira*/
+:root {
+    /*variáveis css*/
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    /*variáveis css*/
+    /*tamanho de fonte
+    100%(relativo) - 16px(unidade de medida forte) - 1rem(relativo ao root-rootelement - em (elemento à cima))
+    1:45 do vídeo;
+    */
+    /*mobile first*/
+    font-size: 60%; /* controle das medidas rem */
+
+}
+
+/*asterisco - um elemento qualquer - pedindo para configurar assim todo meu documento*/
+* {
+  margin: 0; /*lado de fora*/
+  padding: 0; /*padding(lado de dentro): 1px 10px 30px 40px (clock wise)- cima, direita, baixo, esquerda*/
+  /*clock wise*/
+  box-sizing: border-box; /*box-sizing: é por padrão content-size*/
+  /*content-size medir a caixa pelo seu conteúdo, border-box retira essa propriedade, mede pela bordar*/
+  /*padding e margin - colocar 1 valor ele se refere aos quatro cantos
+  dois valores em cima / embaixo e lados
+  três valores - topo, laterais e embaixo
+  */
+}
+
+/*boa prática*/
+html,
+body {
+   height: 100vh; /*vh-view port height - altura da view*/
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex; /*display: block ocupa toda linha que ele está, inline não quebra*/
+  /*span e a são tags inline*/
+  align-items: center; /*precisa do display: flex habilitado*/
+justify-content: center; /*precisa do display: flex habilitado*/
+}
+
+body,
+input, /*elementos com força de estilização*/
+button, /*elementos com força de estilização*/
+textarea { /*elementos com força de estilização*/
+  font: 500 1.6rem Poppins; /*500 poderia ser colocado como "font-weight"*/
+  color: var(--color-text-base);
+}
+
+#container {
+  width: 90vw; /*view port width(largura)*/
+  max-width: 700px; /*view port irá até, no máximo 700px*/
+}
+

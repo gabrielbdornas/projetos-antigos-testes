@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  import_info: one
+  client_account_number: MyString
+  cliente_account_reduction: 1
+  client_account_description: MyString
+  before_balance: 1.5
+  before_balance_type: MyString
+  debit: 1.5
+  credit: 1.5
+  credit_type: MyString
+  balance: 1.5
+  balance_type: MyString
+  end_balance: 1.5
+  end_balance_type: MyString
+  chart_of_account: one
+
+two:
+  import_info: two
+  client_account_number: MyString
+  cliente_account_reduction: 1
+  client_account_description: MyString
+  before_balance: 1.5
+  before_balance_type: MyString
+  debit: 1.5
+  credit: 1.5
+  credit_type: MyString
+  balance: 1.5
+  balance_type: MyString
+  end_balance: 1.5
+  end_balance_type: MyString
+  chart_of_account: two

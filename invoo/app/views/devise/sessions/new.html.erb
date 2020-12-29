@@ -1,0 +1,31 @@
+<div class="middle-box text-center loginscreen animated fadeInDown">
+  <div>
+    <div>
+      <%= image_tag "InvoO-logo.png", class: "logo-name", style: "width: 200px"%>
+          <h1 class="logo-name"></h1>
+            <h3>Bem vindo a InvoO</h3>
+                    <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+              <p>Login</p>
+
+              <div class="form-group m-t role:form">
+                 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|%>
+                 <%= render "devise/shared/error_messages", resource: resource %>
+
+                <div class="form-group">
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: "Email" %>
+                </div>
+                    <div class="form-group">
+                        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control', placeholder: "Senha" %>
+                    </div>
+                      <div class="actions">
+                       <%= f.submit "Entrar", class: 'btn btn-primary block full-width m-b' %>
+                      </div>
+                <% end %>
+
+
+
+          </form>
+            <%= render "devise/shared/links", class:"btn btn-sm btn-white btn-block" %>
+      </div>
+    </div>
+</div>

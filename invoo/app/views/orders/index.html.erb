@@ -1,0 +1,15 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+<h2> Suas faturas para pagamento </h2>
+</div>
+<div class="card my-4">
+  <div class="card-body">
+    <% @orders.each do |order| %>
+  <h3>Nome da empresa:</h3><p><%= order.company.company_name%></p>
+  <h3>CNPJ da empresa:</h3><p><%= order.company.cnpj%></p>
+  <h3>Criado em:</h3><p><%= order.company.created_at%></p>
+  <%= link_to "PAGAR FATURA", order.link, class:'btn btn-w-m btn-primary' %>
+<% end %>
+  </div>
+</div>
+
+</div>

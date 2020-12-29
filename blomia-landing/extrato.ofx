@@ -1,0 +1,178 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20200718120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>1967-4</BRANCHID>
+               <ACCTID>44250-X</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20200528120000[-3:BRT]</DTSTART>
+               <DTEND>20200630120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200605120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>147.00</TRNAMT>
+                  <FITID>202006050147000</FITID>
+                  <CHECKNUM>000148320105</CHECKNUM>
+                  <REFNUM>148.320.105</REFNUM>
+                  <MEMO>TED-Crédito em Conta - 341 3033 20421734000151 COND ED DESEMB</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200605120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-14000.00</TRNAMT>
+                  <FITID>20200605114000000</FITID>
+                  <CHECKNUM>619000135659</CHECKNUM>
+                  <REFNUM>608.619.000.135.659</REFNUM>
+                  <MEMO>Transferência enviada - 05/06 8619     135659-3 RENATA FERREIR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200608120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>800.00</TRNAMT>
+                  <FITID>202006080800000</FITID>
+                  <CHECKNUM>000000139672</CHECKNUM>
+                  <REFNUM>139.672</REFNUM>
+                  <MEMO>Recebimento Fornecedor - PICPAY SERVICOS S.A.</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200610120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1196.89</TRNAMT>
+                  <FITID>2020061011196890</FITID>
+                  <CHECKNUM>000000061001</CHECKNUM>
+                  <REFNUM>61.001</REFNUM>
+                  <MEMO>Pagamento de Boleto - BANCO BRADESCO S.A.</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200615120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>11181.81</TRNAMT>
+                  <FITID>20200615011181810</FITID>
+                  <CHECKNUM>000000202005</CHECKNUM>
+                  <REFNUM>202.005</REFNUM>
+                  <MEMO>Recebimento de Proventos - FUNDACAO HOSPITALAR DO ESTADO DE MG FH</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200615120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-190.00</TRNAMT>
+                  <FITID>202006151190000</FITID>
+                  <CHECKNUM>000000061501</CHECKNUM>
+                  <REFNUM>61.501</REFNUM>
+                  <MEMO>Pagamento de Boleto - ITAU UNIBANCO S.A.</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200625120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-400.00</TRNAMT>
+                  <FITID>202006251400000</FITID>
+                  <CHECKNUM>049500937283</CHECKNUM>
+                  <REFNUM>6.049.500.937.283</REFNUM>
+                  <MEMO>Banco 24 Horas - 25/06 09:47 ARAUJO EZEQUIEL DIAS ATMR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>700.00</TRNAMT>
+                  <FITID>202006290700000</FITID>
+                  <CHECKNUM>670445174753</CHECKNUM>
+                  <REFNUM>482.670.445.174.753</REFNUM>
+                  <MEMO>Depósito Online TAA - 29/06 17:47 SOP-AV.GOV.VALADARES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>1300.00</TRNAMT>
+                  <FITID>2020062901300000</FITID>
+                  <CHECKNUM>670790140518</CHECKNUM>
+                  <REFNUM>482.670.790.140.518</REFNUM>
+                  <MEMO>Depósito Online TAA - 29/06 14:05 SOP-AV.BANDEIRANTES</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2700.00</TRNAMT>
+                  <FITID>2020062902700000</FITID>
+                  <CHECKNUM>000223026127</CHECKNUM>
+                  <REFNUM>223.026.127</REFNUM>
+                  <MEMO>TED-Crédito em Conta - 077 0001     2256558533 PEDRO VIEIRA D</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>4369.00</TRNAMT>
+                  <FITID>2020062904369000</FITID>
+                  <CHECKNUM>000224050957</CHECKNUM>
+                  <REFNUM>224.050.957</REFNUM>
+                  <MEMO>TED-Crédito em Conta - 033 3058     8009267651 LILA MARIA BRA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5147.40</TRNAMT>
+                  <FITID>2020062915147400</FITID>
+                  <CHECKNUM>000100168884</CHECKNUM>
+                  <REFNUM>100.168.884</REFNUM>
+                  <MEMO>Pagto cartão crédito - VISA GOLD</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200629120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5396.08</TRNAMT>
+                  <FITID>2020062915396080</FITID>
+                  <CHECKNUM>000115246566</CHECKNUM>
+                  <REFNUM>115.246.566</REFNUM>
+                  <MEMO>Pagto cartão crédito - VISA INFINITE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20200630120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-10.00</TRNAMT>
+                  <FITID>20200630110000</FITID>
+                  <CHECKNUM>368000038972</CHECKNUM>
+                  <REFNUM>603.368.000.038.972</REFNUM>
+                  <MEMO>Transferência enviada - 30/06 3368      38972-2 ROSEANE ALVES</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>10592.26</BALAMT>
+               <DTASOF>20200630120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

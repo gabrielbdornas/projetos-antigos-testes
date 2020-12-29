@@ -1,0 +1,2 @@
+class VpnImportation < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unity: one
+  level: one
+  name: MyString
+  modality: MyString
+  semesters_duration: 1
+  period: MyString
+
+two:
+  unity: two
+  level: two
+  name: MyString
+  modality: MyString
+  semesters_duration: 1
+  period: MyString

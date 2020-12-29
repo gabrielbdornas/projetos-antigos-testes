@@ -1,0 +1,5 @@
+meta_product_name: "InvoO"
+meta_title: "InvoO - Sua Controladoria Simplificada"
+meta_description: "InvoO prepara seus relatórios econômicos-financeiros de maneira rápida e profissional, sem necessidade de uma equipe de Controladoria e prontos para o envio a investidores, quotistas, agências de fomento e afins."
+meta_image: "InvoO-logo.png" # should exist in `app/assets/images/`
+twitter_account: "@invoo"   # required for Twitter Cards

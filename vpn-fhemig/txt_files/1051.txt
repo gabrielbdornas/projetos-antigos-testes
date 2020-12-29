@@ -1,0 +1,152 @@
+Microsoft Windows [versão 10.0.17134.1]
+(c) 2018 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\m14718183>ipconfig /all
+
+Configuração de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : D71GDA516097869-4
+   Sufixo DNS primário . . . . . . . . . . . . : ca.intra
+   Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+   Roteamento de IP ativado. . . . . . . . . . : não
+   Proxy WINS ativado. . . . . . . . . . . . . : não
+   Lista de pesquisa de sufixo DNS . . . . . . : ca.intra
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Realtek PCIe GBE Family Controller
+   Endereço Físico . . . . . . . . . . . . . . : 70-85-C2-64-D2-09
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuração Automática Habilitada. . . . . : Sim
+   Endereço IPv6 de link local . . . . . . . . : fe80::f9c1:feb6:7130:f5fb%5(Preferencial)
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.183.112.72(Preferencial)
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Concessão Obtida. . . . . . . . . . . . . . : terça-feira, 25 de agosto de 2020 16:11:33
+   Concessão Expira. . . . . . . . . . . . . . : quarta-feira, 2 de setembro de 2020 16:13:33
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.183.112.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 10.180.96.20
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 74483138
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-23-CA-5B-DB-70-85-C2-64-D2-09
+   Servidores DNS. . . . . . . . . . . . . . . : 10.180.96.20
+                                                 192.168.99.71
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Desabilitado
+
+C:\Users\m14718183>Microsoft Windows [versão 10.0.17134.1]
+'Microsoft' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>(c) 2018 Microsoft Corporation. Todos os direitos reservados.
+2018 foi inesperado neste momento.
+
+C:\Users\m14718183>
+C:\Users\m14718183>C:\Users\m14718183>ipconfig /all
+'C:\Users\m14718183' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>
+C:\Users\m14718183>Configuração de IP do Windows
+'Configuração' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>
+C:\Users\m14718183>   Nome do host. . . . . . . . . . . . . . . . : D71GDA516097869
+'Nome' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Sufixo DNS primário . . . . . . . . . . . . : ca.intra
+'Sufixo' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+'Tipo' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Roteamento de IP ativado. . . . . . . . . . : não
+'Roteamento' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Proxy WINS ativado. . . . . . . . . . . . . : não
+'Proxy' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Lista de pesquisa de sufixo DNS . . . . . . : ca.intra
+'Lista' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>
+C:\Users\m14718183>Adaptador Ethernet Ethernet:
+'Adaptador' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>
+C:\Users\m14718183>   Sufixo DNS específico de conexão. . . . . . : ca.intra
+'Sufixo' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Descrição . . . . . . . . . . . . . . . . . : Realtek PCIe GBE Family Controller
+'Descrição' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Endereço Físico . . . . . . . . . . . . . . : 70-85-C2-64-D2-09
+'Endereço' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+'DHCP' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Configuração Automática Habilitada. . . . . : Sim
+'Configuração' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Endereço IPv6 de link local . . . . . . . . : fe80::f9c1:feb6:7130:f5fb%5(Preferencial)
+'Endereço' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Endereço IPv4. . . . . . . .  . . . . . . . : 10.183.112.72(Preferencial)
+'Endereço' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+'Máscara' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Concessão Obtida. . . . . . . . . . . . . . : terça-feira, 25 de agosto de 2020 16:11:33
+'Concessão' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Concessão Expira. . . . . . . . . . . . . . : quarta-feira, 2 de setembro de 2020 16:13:33
+'Concessão' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Gateway Padrão. . . . . . . . . . . . . . . : 10.183.112.1
+'Gateway' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Servidor DHCP . . . . . . . . . . . . . . . : 10.180.96.20
+'Servidor' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   IAID de DHCPv6. . . . . . . . . . . . . . . : 74483138
+'IAID' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-23-CA-5B-DB-70-85-C2-64-D2-09
+'DUID' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   Servidores DNS. . . . . . . . . . . . . . . : 10.180.96.20
+'Servidores' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>                                                 192.168.99.71
+'192.168.99.71' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>   NetBIOS em Tcpip. . . . . . . . . . . . . . : Desabilitado
+'NetBIOS' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\m14718183>
+C:\Users\m14718183>C:\Users\m14718183>

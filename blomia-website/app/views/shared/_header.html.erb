@@ -1,0 +1,38 @@
+<header class="navbar-ghost navbar-floating navbar-sticky">
+    <div class="container text-center"><a class="menu-trigger" href="#fs-menu" data-toggle="fullscreen-overlay"><span>Menu&nbsp;</span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-text-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+    </svg></a><div class="navbar-brand d-inline-block"><%= link_to root_path do %><%= image_tag 'logoblomia.png', width: 136, height: 67, alt: 'Logo Blomia' %><% end %></div></div>
+</header>
+
+<div class="fs-overlay-wrapper" id="fs-menu" style="background-image: url(img/fs-overlay-bg.png);"><span class="fs-overlay-close"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-text-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+    </svg></i></span>
+    <div class="fs-overlay-inner">
+        <div class="fs-overlay-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-0"><%= link_to root_path do %><%= (content_tag :span, "Home", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to ajuda_path do %><%= (content_tag :span, "Ajuda", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to historia_path do %><%= (content_tag :span, "História", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to parapessoas_path do %><%= (content_tag :span, "Para Pessoas", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to paraempresas_path do %><%= (content_tag :span, "Para Empresas", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to afiliado_path do %><%= (content_tag :span, "Programa de Afiliados", :class => "dropdown-item lead py-2") %><% end %></li>
+                            <li class="mb-0"><%= link_to trabalhe_path do %><%= (content_tag :span, "Trabalhe Conosco", :class => "dropdown-item lead py-2") %><% end %></li>
+                        </ul>
+</div>
+<div class="col-sm-6 d-none d-sm-block pt-3">
+<h6>Contato</h6>
+<ul class="list-icon mb-4 pb-2">
+<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg>&nbsp;contato@blomia.com.br</li>
+</ul>
+<h6 class="pb-2">Redes Sociais</h6><a class="social-btn sb-style-6" href="https://twitter.com/blomia" data-toggle="tooltip" data-placement="top" title="Twitter"><img src="assets/twitter.svg" alt="Twitter"></a><a class="social-btn sb-style-6" href="https://www.facebook.com/blomiadinheiroemsegundos" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a class="social-btn sb-style-6" href="https://www.youtube.com/channel/UCrlxQzZvS9BR6XrmadfToJg" data-toggle="tooltip" data-placement="top" title="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a><a class="social-btn sb-style-6" href="https://www.instagram.com/blomiadinheiroemsegundos/" data-toggle="tooltip" data-placement="top" title="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a><a class="social-btn sb-style-6" href="https://br.linkedin.com/company/blomia?trk=public_profile_topcard_current_company" data-toggle="tooltip" data-placement="top" title="Linkedin"><img src="assets/linkedin.svg" alt="Linkedin"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

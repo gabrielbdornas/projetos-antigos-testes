@@ -1,0 +1,13 @@
+<h1><%= @page.page_topic %>P</h1>
+<%= link_to 'Novo Exemplo', new_page_example_path(@page) %>
+<ul>
+  <% @examples.each do |example| %>
+   <li>
+    <%= link_to example.example_topic, page_example_path(@page.id, example.id) %>
+    <%= link_to 'Editar Exemplo', edit_example_path(example) %>
+    <%= link_to "Apagar Exemplo", example_path(example), method: :delete %>
+   </li>
+  <% end %>
+</ul>
+
+

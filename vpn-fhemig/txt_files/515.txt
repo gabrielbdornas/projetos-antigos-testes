@@ -1,0 +1,35 @@
+Microsoft Windows [versão 10.0.18363.628]
+(c) 2019 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\m14718183>ipconfig /all
+
+Configuração de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : D71GD5157657208-0
+   Sufixo DNS primário . . . . . . . . . . . . : ca.intra
+   Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+   Roteamento de IP ativado. . . . . . . . . . : não
+   Proxy WINS ativado. . . . . . . . . . . . . : não
+   Lista de pesquisa de sufixo DNS . . . . . . : ca.intra
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Endereço Físico . . . . . . . . . . . . . . : 70-85-C2-D0-27-07
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuração Automática Habilitada. . . . . : Sim
+   Endereço IPv6 de link local . . . . . . . . : fe80::8581:f19e:35cd:5c77%3(Preferencial)
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.183.112.102(Preferencial)
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Concessão Obtida. . . . . . . . . . . . . . : terça-feira, 25 de agosto de 2020 17:02:23
+   Concessão Expira. . . . . . . . . . . . . . : quarta-feira, 2 de setembro de 2020 17:02:22
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.183.112.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 10.180.96.20
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 108037570
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-26-0A-C6-47-70-85-C2-D0-27-07
+   Servidores DNS. . . . . . . . . . . . . . . : 10.180.96.20
+                                                 192.168.99.71
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Desabilitado
+
+C:\Users\m14718183>

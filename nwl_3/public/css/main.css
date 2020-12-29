@@ -1,0 +1,65 @@
+/*
+uma regra css é composta por seletor, declaração com propriedade e valor
+
+body {
+    color: red;
+}
+
+A importância da regra será sempre a última acrescentada (cascata, cachoeira)
+
+style diretamente na tag da página html tem uma força maior, especificidade maior - GERALMENTE FUGIMOS DISSO PARA FICAR MAIS ORGANIZADO
+(!important) também tem mais força que todos, UTILIZAR COM CUIDADO
+style diretamente na tag style do html tem uma força menor que a acima mencionada, caso a tag style seja colocada depois da
+referencia ao documento de estilo
+
+tipos de seletores:
+id(atributo global, mas nesse caso ele não pode se repetir, utilizar em apenas uma tag ou local)
+muito mais forte do que modificar somente a tag
+
+#id {
+
+}
+
+.class {
+    
+}
+
+no-repeat:  utilizado na tag body background, pois o body estava se repetindo na página, ao incluir esta propriedade ele
+finaliou o body em uma linha e deixou as outras
+
+vh ou view por height = divide a tela em pedaços e preenche com quantos vc achou necessário, na caso do body foi configurado para
+que ele ocupe 100% da tela ou view port height
+
+rem e em são uniddes utilizadas primariamente em fontes
+em - vai buscar no elemento pai ou elemento anterior - 1 em = 16px = 100%
+rem - pega sempre do root ou root element poderia escrever
+:root {
+
+}
+
+*/
+
+* {
+    margin: 0; /*Para, entre outros, retirar a barrinha que apareceu após configurar o heigth de 100 vh*/
+    padding: 0;
+    box-sizing: border-box; /*(por padrão ele é content-box), ou somando padding com tamanho do conteúdo*/
+    outline: none;
+}
+
+/*Definição de fonte aqui auxilia na resposividade*/
+:root {
+    font-size: 62.5%; /*Definição do tamanho da fonte geralmente em porcentagem, neste 62.5% equivale a 10 px - precisa fazer assim para medidas rem e em funcionarem*/
+}
+
+body {    
+    height: 100vh;
+    color: white;
+    background: #ebf2f5;
+}
+
+body, input, button, textarea {
+    font-size: 1.8em;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}

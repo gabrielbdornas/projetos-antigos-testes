@@ -1,0 +1,18 @@
+<footer class="container pt-3">
+    <div class="py-5 my-3 text-center">
+        <div class="navbar-brand d-inline-block pb-2"><%= link_to root_path do %><%= image_tag 'logoblomia.png', width: 136, height: 67, alt: 'Logo Blomia' %><% end %>
+        </div>
+        <div class="pt-4"><a class="social-btn sb-style-6" href="https://twitter.com/blomia" data-toggle="tooltip" data-placement="top" title="Twitter"><img src="assets/twitter.svg" alt="Twitter"></a><a class="social-btn sb-style-6" href="https://www.facebook.com/blomiadinheiroemsegundos" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a class="social-btn sb-style-6" href="https://www.youtube.com/channel/UCrlxQzZvS9BR6XrmadfToJg" data-toggle="tooltip" data-placement="top" title="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a><a class="social-btn sb-style-6" href="https://www.instagram.com/blomiadinheiroemsegundos/" data-toggle="tooltip" data-placement="top" title="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a><a class="social-btn sb-style-6" href="https://br.linkedin.com/company/blomia?trk=public_profile_topcard_current_company" data-toggle="tooltip" data-placement="top" title="Linkedin"><img src="assets/linkedin.svg" alt="Linkedin"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="d-md-flex justify-content-between align-items-center py-4 text-center text-md-left">
+        <div class="order-2"><%= link_to termos_path do %><%= (content_tag :span, "Termos de Uso", :class => "footer-link") %><% end %>&nbsp<%= link_to privacidade_path do %><%= (content_tag :span, "Política de Privacidade", :class => "footer-link") %><% end %>
+        </div>
+        <p class="m-0 text-sm order-1"><span class='opacity-60'>Blomia© 2020. Todos os direitos reservados.</span></p>
+    </div>
+</footer>
+
+<div class="site-backdrop"></div>
+
+<%= javascript_pack_tag 'theme' %>

@@ -1,0 +1,75 @@
+<div class="container">
+        <h4 class="text-uppercase font-weight-light text-center m-5">Confira</h4>
+
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100">
+                <%= link_to posts_path do %>
+                  <%= image_tag 'blog_home_page.jpg', class: 'card-img-top', alt: 'blog' %>
+                <% end %>
+                <div class="card-body">
+                    <%= link_to posts_path do %>
+                      <h5 class="card-title"><strong>Blog</strong></h5>
+                    <% end %>
+                    <p class="card-text">Posts sobre programação. Artigos voltados, principalmente, para a linguagem Ruby e seu famoso Framework Ruby on Rails.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                      <%= @last_created_post.nil? ? 'Nenhum post publicado' : @last_created_post.strftime("Último post publicado/atualizado em %d/%m/%Y") %>
+                    </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100">
+                <%= link_to books_path do %>
+                  <%= image_tag 'books_home_page.jpg', class: 'card-img-top', alt: 'nomade digital' %>
+                <% end %>
+                <div class="card-body">
+                    <%= link_to books_path do %>
+                      <h5 class="card-title"><strong>Livros</strong></h5>
+                    <% end %>
+                    <p class="card-text">Codei! Uma epopéia em busca de seu nômade digital.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100">
+                <%= link_to courses_path do %>
+                  <%= image_tag 'cursos_home_page.jpg', class: 'card-img-top', alt: 'nomade digital' %>
+                <% end %>
+                <div class="card-body">
+                    <%= link_to courses_path do %>
+                      <h5 class="card-title"><strong>Cursos</strong></h5>
+                    <% end %>
+                    <p class="card-text">Para ser um nômade digital é preciso aprender a aprender! No lugar de receitas de bolo impossíveis de serem reproduzidas você encontrará diversos materiais para pesquisa e estudo, mas calma, se precisar de algum apoio é só mandar uma mensagem!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100">
+                <%= link_to smart_apps_path do %>
+                  <%= image_tag 'utilidades.jpg', class: 'card-img-top', alt: 'nomade digital' %>
+                <% end %>
+                <div class="card-body">
+                    <%= link_to smart_apps_path do %>
+                      <h5 class="card-title"><strong>Smart Apps</strong></h5>
+                    <% end %>
+                    <p class="card-text">Procurando ferramentas para simplificar sua vida? Ainda não encontrou um guia Boostrap que seja rápido, intuitivo e fácil, ou uma ferramenta para desenhar o banco de dados de seu novo projeto? Pronto, encontrou isso e muito mais!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>

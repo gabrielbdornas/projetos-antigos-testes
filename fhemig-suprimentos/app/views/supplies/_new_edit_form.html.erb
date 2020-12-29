@@ -1,0 +1,6 @@
+<div>
+  <%= simple_form_for(@supply) do |f| %>
+    <%= f.input :iten_id, label: 'Item Siad', collection: @itens_siad_code %>
+    <%= f.submit 'Criar/Atualizar', class: 'btn btn-success justify-content-end'  %>
+  <% end %>
+</div>

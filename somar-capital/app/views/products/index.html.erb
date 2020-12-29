@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Produtos Contábeis</h1>
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-6 col-md-4">
+        <div class="card">
+          <%= image_tag product.photo_url, class: "card-img-top", size: "350x200" %>
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5>
+            <div class="d-flex justify-content-between">
+              <p class="p-1"><strong>R$ <%= number_with_delimiter(Money.new(product.price,"brl"), :delimiter => ".", :separator => ",") %></strong></p>
+              <div>
+              <%= link_to "Comprar", product_path(product), class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

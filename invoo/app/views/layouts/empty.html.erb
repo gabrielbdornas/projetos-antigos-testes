@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InvoO | Sua Controladoria Simplificada</title>
+    <meta name="description" content="InvoO prepara seus relatórios econômicos-financeiros de maneira rápida e profissional, sem necessidade de uma equipe de Controladoria e prontos para o envio a investidores, quotistas, agências de fomento e afins.">
+    <%= favicon_link_tag 'InvoOavatar.png' %>
+    <!-- Facebook -->
+    <meta property="og:title" content="InvoO - Sua Controladoria Simplificada"/>
+    <meta property="og:image" content="<%= image_path("InvoO-logo.png") %>"/>
+    <meta property="og:description" content="InvoO prepara seus relatórios econômicos-financeiros de maneira rápida e profissional, sem necessidade de uma equipe de Controladoria e prontos para o envio a investidores, quotistas, agências de fomento e afins."/>
+    <meta property="og:site_name" content="InvoO"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.invoo.me" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@InvoO">
+    <meta name="twitter:title" content="InvoO - Sua Controladoria Automatizada">
+    <meta name="twitter:description" content="InvoO prepara seus relatórios econômicos-financeiros de maneira rápida e profissional, sem necessidade de uma equipe de Controladoria e prontos para o envio a investidores, quotistas, agências de fomento e afins.">
+    <meta name="twitter:creator" content="@InvoO">
+    <meta name="twitter:image:src" content="InvoO-logo.png">
+
+    <!-- Include style per-controller - vendor plugins -->
+    <%#= stylesheet_link_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.css") %>
+
+    <!-- Main css styles -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+    <!-- Main javascript files -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+
+
+</head>
+<body class="gray-bg">
+
+<!-- Main view  -->
+<%= yield %>
+
+
+    <!-- Include javascript per-controller - vendor plugins -->
+      <%#= javascript_include_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.js") %>
+
+    <!-- Include javascript per-view -->
+    <!-- For demo purpose we include javascript in view but you can easily start SeedProject and organize it with Rails asset pipeline as you want -->
+    <%= yield :javascript %>
+
+</body>
+</html>

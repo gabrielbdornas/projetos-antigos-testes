@@ -1,0 +1,17 @@
+# EDITAR ARQUIVO estados-municipios-brasileiros.gemspec
+
+# DESCOBRIR PQ VARIÁVEIS INCLUIDAS NO ARQUIVO .ENV NÃO ESTÃO FUNCIONANDO NO ARQUIVO DB/CONFIG.YML - PRECISAREI DISSO PARA DEPLOY DA APLICAÇÃO
+
+# QUANDO DESCOBIR RETIRAR AQUIVO DB/CONFIG.YML DO GITGINORE
+
+https://www.techcareerbooster.com/blog/use-activerecord-in-your-ruby-project
+
+# Descobrir como abre um arquivo a partir de um site
+
+https://www.ibge.gov.br/geociencias/organizacao-do-territorio/divisao-regional/23701-divisao-territorial-brasileira.html?=&t=o-que-e
+
+https://www.ibge.gov.br/geociencias/organizacao-do-territorio/divisao-regional/23701-divisao-territorial-brasileira.html?=&t=downloads
+
+ftp://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/
+
+# Lembrar que código com parse dos municípios está no projeto blomia

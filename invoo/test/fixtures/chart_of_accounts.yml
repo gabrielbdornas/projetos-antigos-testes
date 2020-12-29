@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_number: MyString
+  group: MyString
+  sub_group: MyString
+  account: MyString
+  nature: MyString
+
+two:
+  account_number: MyString
+  group: MyString
+  sub_group: MyString
+  account: MyString
+  nature: MyString

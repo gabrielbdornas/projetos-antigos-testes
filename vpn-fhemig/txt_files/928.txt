@@ -1,0 +1,60 @@
+Microsoft Windows [versão 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\m7522667>ipconfig /all
+
+Configuração de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : D71GD9286094392-0
+   Sufixo DNS primário . . . . . . . . . . . . : ca.intra
+   Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+   Roteamento de IP ativado. . . . . . . . . . : não
+   Proxy WINS ativado. . . . . . . . . . . . . : não
+   Lista de pesquisa de sufixo DNS . . . . . . : ca.intra
+
+Adaptador Ethernet Conexão local:
+
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Realtek PCIe GBE Family Control
+ler
+   Endereço Físico . . . . . . . . . . . . . . : B8-AE-ED-89-DA-80
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuração Automática Habilitada. . . . . : Sim
+   Endereço IPv6 de link local . . . . . . . . : fe80::c887:21a5:93f2:4472%11(Pr
+eferencial)
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.183.112.139(Preferencial)
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Concessão Obtida. . . . . . . . . . . . . . : quinta-feira, 20 de agosto de 2
+020 15:09:59
+   Concessão Expira. . . . . . . . . . . . . . : sexta-feira, 28 de agosto de 20
+20 15:09:59
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.183.112.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 10.180.96.20
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 250390635
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-1E-B9-33-96-B8-AE-E
+D-89-DA-80
+   Servidores DNS. . . . . . . . . . . . . . . : fe80::ea08:8bff:fe8c:5f10%11
+                                                 10.180.96.20
+                                                 192.168.99.71
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Desabilitado
+
+Adaptador de túnel isatap.ca.intra:
+
+   Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Adaptador do Microsoft ISATAP
+   Endereço Físico . . . . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Habilitado . . . . . . . . . . . . . . : Não
+   Configuração Automática Habilitada. . . . . : Sim
+
+Adaptador de túnel Teredo Tunneling Pseudo-Interface:
+
+   Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+   Sufixo DNS específico de conexão. . . . . . :
+   Descrição . . . . . . . . . . . . . . . . . : Teredo Tunneling Pseudo-Interfa
+ce
+   Endereço Físico . . . . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Habilitado . . . . . . . . . . . . . . : Não
+   Configuração Automática Habilitada. . . . . : Sim
+
+C:\Users\m7522667>

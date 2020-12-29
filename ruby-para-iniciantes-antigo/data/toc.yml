@@ -1,0 +1,119 @@
+- index
+- preface
+- creation
+- path: learning_to_program
+  children:
+  - learning_modes
+  - dont_believe
+  - formatting_code
+  - error_messages
+  - using_google
+- path: your_tools
+  children:
+  - text_editor
+  - terminal
+  - ruby_runtime
+  - workflow
+  - irb
+- roadmap
+- object_oriented_programming
+- path: variables
+  children:
+  - reusing_names
+  - right_goes_first
+- path: built_in_classes
+  children:
+  - numbers
+  - strings
+  - true_false_nil
+  - symbols
+  - arrays
+  - hashes
+- path: objects
+  children:
+  - classes
+  - instances
+  - methods
+  - calling
+  - arguments
+  - listing
+  - predicates
+  - bangs
+- path: writing_methods
+  children:
+  - constituents
+  - definition
+  - usage
+  - return_values
+  - scopes
+  - combining
+  - printing
+- path: writing_classes
+  children:
+  - definition
+  - methods
+  - initializers
+  - instance_variables
+  - attribute_readers
+  - attribute_writers
+  - state_and_behaviour
+  - interaction
+  - self
+- path: blocks
+  children:
+  - syntax
+  - arguments
+  - return_values
+  - ioc
+  - iterators
+- path: conditionals
+  children:
+  - nothing_and_truth
+- path: operators
+  children:
+  - arithmetical
+  - logical
+  - comparison
+  - methods
+- path: bonus
+  children:
+  - string_interpolation
+  - top_level
+  - other_methods
+  - questions_commands
+  - alternative-syntax
+  - good_names
+  - parentheses
+  - arguments_parameters
+  - write_new_method
+- path: advanced
+  children:
+  - libraries
+  - modules
+  - private_methods
+  - procs
+  - yield
+  - regular_expressions
+- path: exercises
+  children:
+  - numbers
+  - strings
+  - arrays_1
+  - hashes_1
+  - methods_1
+  - arrays_2
+  - nested_arrays
+  - hashes_2
+  - truthiness
+  - email
+  - mailbox
+  - mailbox_text
+  - mailbox_html
+  - mailbox_file
+  - mailbox_csv
+- path: exercises_2
+  children:
+  - numbers
+  - strings
+  - arrays_1
+  - hashes_1

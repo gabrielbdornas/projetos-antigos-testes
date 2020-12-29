@@ -1,0 +1,293 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Gráficos do Balanço Patrimonial</h2>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <i> <%= link_to 'Login', new_company_path %> </i>
+          </li>
+          <li class="breadcrumb-item">
+            <i><%= link_to 'Importação', new_company_import_account_path(session[:current_company_id]) %></i>
+          </li>
+          <li class="breadcrumb-item">
+            <i> <%= link_to 'De - Para', company_from_to_index_path(session[:current_company_id]) %> </i>
+          </li>
+          <li class="breadcrumb-item">
+            <i> <%= link_to 'Exceções', company_exceptions_path(session[:current_company_id]) %> </i>
+          </li>
+          <li class="breadcrumb-item active">
+            <strong>Balanço Patrimonial</strong>
+          </li>
+        </ol>
+        <div class="mt-3">
+          <p><em><strong>Mês:</strong> Outubro</br>
+          <strong>Ano:</strong> 2019</br>
+          <strong>Moeda: </strong> Reais</em></p>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content  animated fadeInRight">
+<div class="row" id="sortable-view">
+    <div class="col-lg-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>
+                  Capital de Giro
+                  <!-- <small>Opção 1 x Opção 2</small> -->
+                </h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                  <%= line_chart cdg_array.map { |cdg|
+                     {name: cdg[:name], data: cdg[:data] }
+                   } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Necessidade de Capital de Giro e Tesouraria</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                  <%= line_chart ncg_teso_array.map { |ncg|
+                     {name: ncg[:name], data: ncg[:data] }
+                   } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Variações da NCG e Ciclo Financeiro</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                <%= line_chart var_dancg_array.map { |vncg|
+                     {name: vncg[:name], data: vncg[:data] }
+                   } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Composição Endividamento</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                  <%= column_chart endividamento_array.map { |endiv|
+                     {name: endiv[:name], data: endiv[:data] }
+                   } %>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Evolução Dívida Longo Prazo v. Curto Prazo</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                   <%= column_chart div_endv_array.map { |endv|
+                     {name: endv[:name], data: endv[:data] }
+                   }, stacked: true %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Evolução do Endividamento</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                  <%= column_chart evo_endiv_array.map do  |endiv| %>
+                      <%= { name: endiv[:name], data: endiv[:data], library: endiv[:library] }  %>
+                  <% end %>
+                </div>
+            </div>
+        </div>
+
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Evolução Dívida Longo Prazo v. Curto Prazo (%)</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div>
+                  <%= column_chart evo_div_lpcp_array.map { |lpcp|
+                     {name: lpcp[:name], data: lpcp[:data] }
+                   }, stacked: true %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-lg-6">
+
+
+
+    </div>
+
+</div>
+</div>
+
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    WinMove();
+
+    // Dragable panels
+    function WinMove() {
+        var element = "[class*=col]";
+        var handle = ".ibox-title";
+        var connect = "[class*=col]";
+        $(element).sortable(
+                {
+                    handle: handle,
+                    connectWith: connect,
+                    tolerance: 'pointer',
+                    forcePlaceholderSize: true,
+                    opacity: 0.8
+                })
+                .disableSelection();
+    };
+
+});
+
+</script>
+
+<% end %>

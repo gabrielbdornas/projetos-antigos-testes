@@ -1,0 +1,46 @@
+<Schema name="Fhemig em N&#250;meros">
+  <Cube name="hospitalizacao" caption="Hospitalizacao" visible="true" cache="true" enabled="true">
+    <Table name="fato_hospitalizacao">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="sk_hospital" highCardinality="false" name="hospitais" caption="Hospitais">
+      <Hierarchy name="hospitais" visible="true" hasAll="true" primaryKey="sk_hospital" caption="Hospitais">
+        <Table name="dim_hospitais">
+        </Table>
+        <Level name="sigla_hospital" visible="true" column="abreviacao" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="Sigla do Hospital">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="sk_genero" highCardinality="false" name="generos" caption="Generos">
+      <Hierarchy name="generos" visible="true" hasAll="true" primaryKey="sk_genero" caption="G&#234;neros">
+        <Table name="dim_generos">
+        </Table>
+        <Level name="generos" visible="true" column="nome" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never" caption="G&#234;neros">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="sk_data" highCardinality="false" name="datas" caption="Datas">
+      <Hierarchy name="datas" visible="true" hasAll="true" primaryKey="sk_data" caption="Datas">
+        <Table name="dim_datas_2019_2020">
+        </Table>
+        <Level name="ano" visible="true" column="ano" type="Integer" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never" caption="Ano">
+        </Level>
+        <Level name="mes" visible="true" column="num_mes" type="Integer" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never" caption="M&#234;s">
+        </Level>
+        <Level name="dia" visible="true" column="dia_brt" type="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never" caption="Dia">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="pacientes_dia" column="pacientes_dia" aggregator="sum" caption="Pacientes Dia" visible="true">
+    </Measure>
+    <Measure name="saidas_dia" column="saidas_dia" aggregator="sum" caption="Saidas Dia" visible="true">
+    </Measure>
+    <Measure name="obitos_dia" column="obitos_dia" aggregator="sum" caption="Obitos Dia" visible="true">
+    </Measure>
+    <Measure name="leitos_dia" column="leitos_dia" aggregator="sum" caption="Leitos Dia" visible="true">
+    </Measure>
+    <CalculatedMember name="taxa_ocupacao" formatString="##,##" caption="Taxa de Ocupa&#231;&#227;o" formula="[Measures].[pacientes_dia] / [Measures].[leitos_dia] * 100" dimension="Measures" visible="true">
+    </CalculatedMember>
+    <CalculatedMember name="taxa_mortalidade" formatString="##,##" caption="Taxa de Mortalidade" formula="[Measures].[obitos_dia] / [Measures].[saidas_dia] * 100" dimension="Measures" visible="true">
+    </CalculatedMember>
+  </Cube>
+</Schema>

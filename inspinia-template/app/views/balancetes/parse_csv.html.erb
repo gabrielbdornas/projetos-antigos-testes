@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Conta</th>
+        <th scope="col">Reduzido</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Anterior</th>
+        <th scope="col">Débitos</th>
+        <th scope="col">Créditos</th>
+        <th scope="col">Movimento</th>
+        <th scope="col">Saldo Atual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @balancete_imports.each do |row| %>
+          <tr>
+            <td scope="row"><%= row.cd_financial_account_company %></td>
+            <td><%= row.cd_financial_account_company_reduction %></td>
+            <td><%= row.financial_account_description %></td>
+            <td><%= row.anterior %></td>
+            <td><%= row.debt %></td>
+            <td><%= row.credit %></td>
+            <td><%= row.moviment %></td>
+            <td><%= row.current_balance %></td>
+          </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>

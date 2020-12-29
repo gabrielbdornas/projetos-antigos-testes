@@ -1,0 +1,44 @@
+Microsoft Windows [versão 10.0.14393]
+(c) 2016 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\m7522667>ipconfig /all
+
+Configuração de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : D71GD4326093400-0
+   Sufixo DNS primário . . . . . . . . . . . . : ca.intra
+   Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+   Roteamento de IP ativado. . . . . . . . . . : não
+   Proxy WINS ativado. . . . . . . . . . . . . : não
+   Lista de pesquisa de sufixo DNS . . . . . . : ca.intra
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Realtek PCIe GBE Family Controller
+   Endereço Físico . . . . . . . . . . . . . . : EC-A8-6B-EF-92-6E
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configuração Automática Habilitada. . . . . : Sim
+   Endereço IPv6 de link local . . . . . . . . : fe80::5ce1:cdce:f93f:d7ce%4(Preferencial)
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.183.112.83(Preferencial)
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Concessão Obtida. . . . . . . . . . . . . . : quinta-feira, 20 de agosto de 2020 11:33:46
+   Concessão Expira. . . . . . . . . . . . . . : sexta-feira, 28 de agosto de 2020 11:33:47
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.183.112.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 10.180.96.20
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 65841259
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-26-C8-59-42-EC-A8-6B-EF-92-6E
+   Servidores DNS. . . . . . . . . . . . . . . : 10.180.96.20
+                                                 192.168.99.71
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Desabilitado
+
+Adaptador de túnel isatap.ca.intra:
+
+   Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+   Sufixo DNS específico de conexão. . . . . . : ca.intra
+   Descrição . . . . . . . . . . . . . . . . . : Microsoft ISATAP Adapter
+   Endereço Físico . . . . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Habilitado . . . . . . . . . . . . . . : Não
+   Configuração Automática Habilitada. . . . . : Sim
+
+C:\Users\m7522667>

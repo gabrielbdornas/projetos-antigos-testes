@@ -1,0 +1,108 @@
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    min-height: 100vh;
+    text-align: center; /*vai alinhar todo conteúdo ao centro*/
+    /* Explicado 1:50 da primeira aula: alinha elementos dentro de uma caixa um ao lado do outro*/
+    display: flex;
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+}
+
+#container {
+    /*poderia ter utilizado justify content no id page-landing mas utilizando o margin: auto ele deixa o conteudo co container,
+    que está dentro do page-landing centralizado*/
+    margin: auto;
+    /*se o 90% for menor ele aplica, se 112 rem(100pix) ele aplica*/
+    width: min(90%, 112rem); /*mudado depois de inserir o @media (min-width: 760px) para deixar mais responsivo, antes somente 90%*/
+}
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+    /*min 4rem, ideal 8vw, máximo 8.4rem*/
+    font-size: clamp(4rem, 8vw, 8.4rem);
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    /* Explicado 1:50 da primeira aula: alinha elementos dentro de uma caixa um ao lado do outro*/
+    display: flex;
+    align-items: center; /*alinha na vertical*/
+    justify-content: center; /*alinha na horizontal*/
+    /* Explicado 1:50 da primeira aula: alinha elementos dentro de uma caixa um ao lado do outro*/
+    margin: auto;
+    transition: background .2s;
+    animation-delay: 250ms;
+}
+
+.visit a:hover {
+    background: #96feff;
+}
+
+/* meta viewport no html é a responsável por fazer a aplicação destas regras
+/*desktop version*/
+@media (min-width: 760px) {
+    #container {
+        /*shorthand background: image repeat position size*/
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem); /*posição relativa*/
+        padding: 5rem 2rem;
+    }
+    
+    header {
+        display: flex; /*todos os conteúdos a partir de agora ficarão um ao lado do outro*/
+        /*propiedades align-itens e justify-content somente estarão disponíveis com dispay flex ou display grid*/
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-weight: bold;
+        width: min(300px, 80%);
+        line-height: .88;
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+    }
+
+    .visit a {
+        margin: initial;
+    }
+}

@@ -1,0 +1,109 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Cadastro de Empresa</h2>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">
+            <strong>Cadastro</strong>
+          </li>
+        </ol>
+    </div>
+</div>
+<%= render 'company_form' %>
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Informação dos Cadastros de Empresas</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                        <thead>
+                        <tr>
+                            <th>Nome da Empresa</th>
+                            <th>CNPJ</th>
+                            <th>Criador</th>
+                            <th>Sistema Contábil</th>
+                            <th>Data de Criação</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <% current_user.company_users.each do |company_user| %>
+                          <tr class="gradeX">
+                            <td> <%= company_user.company.company_name %> </td>
+                            <td> <%= company_user.company.cnpj %> </td>
+                            <td> <%= company_user.user.email %> </td>
+                            <td> <%= company_user.company.report_system %> </td>
+                            <td> <%= company_user.company.created_at %> </td>
+                          </tr>
+                          <% end %>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('.dataTables-example').DataTable({
+        pageLength: 25,
+        responsive: true,
+        dom: '<"html5buttons"B>lTfgitp',
+        buttons: [
+            { extend: 'copy'},
+            {extend: 'csv'},
+            {extend: 'excel', title: 'ExampleFile'},
+            {extend: 'pdf', title: 'ExampleFile'},
+
+            {extend: 'print',
+                customize: function (win){
+                    $(win.document.body).addClass('white-bg');
+                    $(win.document.body).css('font-size', '10px');
+
+                    $(win.document.body).find('table')
+                            .addClass('compact')
+                            .css('font-size', 'inherit');
+                }
+            }
+        ]
+
+    });
+
+
+});
+
+
+
+</script>
+
+<% end %>

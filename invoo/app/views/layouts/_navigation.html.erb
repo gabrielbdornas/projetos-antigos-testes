@@ -1,0 +1,109 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="dropdown profile-element">
+          <span class="block m-t-xs font-bold">
+            <% if user_signed_in? %>
+              <i class="link-btn-current-use", style= "color:#1c84c6">
+                <strong>
+                  <%= link_to current_user.email , edit_user_registration_path %>
+                </strong>
+              </i>
+            <% end %>
+          </span>
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="text-muted text-xs block">Empresa(s)<b class="caret"></b></span>
+          </a>
+          <ul class="dropdown-menu animated fadeInRight m-t-xs">
+            <% current_user.companies.each do |company| %>
+              <li>
+                <%= link_to company.company_name, company_session_company_path(company),method: :post %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </li>
+      <% if session[:current_company_id].blank? %>
+        <li class="<%= 'active' if current_page?('companies/new') %>">
+          <%= link_to new_company_path do %>
+            <i class="fa fa-briefcase"></i> <span class="nav-label">Cadastrar Empresa</span>
+          <% end %>
+        </li>
+      <% else %>
+        <li class="<%= 'active' if current_page?('/companies/:id') %>">
+            <%= link_to company_path(session[:current_company_id]) do %>
+            <i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span>
+            <% end %>
+        </li>
+        <li class="<%= 'active' if current_page?('companies/new') %>">
+            <%= link_to new_company_path do %>
+            <i class="fa fa-briefcase"></i> <span class="nav-label">Cadastrar Empresa</span>
+            <% end %>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-cloud-upload"></i> <span class="nav-label" data-i18n="nav.menulevels">Importação de Dados </span><span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level">
+            <li>
+              <%= link_to 'Importar', new_company_import_account_path(session[:current_company_id]) %>
+            </li>
+            <li>
+              <%= link_to 'De - Para', company_from_to_index_path(session[:current_company_id]) %>
+            </li>
+          </ul>
+        </li>
+        <li class="<%= 'active' if current_page?('/companies/:id/exceptions') %>">
+          <%= link_to company_exceptions_path(session[:current_company_id]) do %>
+            <i class="fa fa-exclamation-triangle"></i> <span class="nav-label">Exceções</span>
+          <% end %>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-usd"></i> <span class="nav-label" data-i18n="nav.menulevels">Demonstrações Financeiras </span><span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="#">Balanço Patrimonial <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                  <li>
+                      <%= link_to 'Relatório', company_balance_sheets_path(session[:current_company_id]) %>
+                  </li>
+                  <li>
+                      <%= link_to 'Gráficos', graphs_company_balance_sheets_path(session[:current_company_id]) %>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">DRE <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                  <li>
+                      <%= link_to 'Relatório', company_dre_index_path(session[:current_company_id]) %>
+                  </li>
+                  <li>
+                      <%= link_to 'Gráficos', graphs_company_dre_index_path(session[:current_company_id]) %>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li>
+                <a href="#">Fluxo de Caixa <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                  <li>
+                      <a href="#">Tabela</a>
+                  </li>
+                  <li>
+                      <a href="#">Gráficos</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <%= link_to 'Balancete', balancete_path %>
+              </li> -->
+            </ul>
+        </li>
+        <li class="<%= 'active' if current_page?('/companies/:id/orders') %>">
+          <%= link_to company_orders_path(session[:current_company_id]) do %>
+            <i class="fa fa-money"></i> <span class="nav-label">Pagamento e Faturas</span>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,178 @@
+Script started on 2020-10-27 10:53:14-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="45"]
+[1m[7m%[27m[1m[0m                                                                                                                                                                             ]2;gabrielbdornas@gabrielbdornas: ~/code/gabrielbdornas/mascaras-de-pano]1;..caras-de-pano[0m[27m[24m[J[01;32m➜  [36mmascaras-de-pano[00m [01;34mgit:([31mdevise[34m) [33m✗[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mmascaras-de-pano[00m [01;34mgit:([31mdevise[34m) [33m✗[00m [4ms[24m[24m[32ms[32mt[39m[32ms[32mt[32mt[39m[?1l>[?2004l
+]2;subl .]1;stt[1m[7m%[27m[1m[0m                                                                                                                                                                             ]2;gabrielbdornas@gabrielbdornas: ~/code/gabrielbdornas/mascaras-de-pano]1;..caras-de-pano[0m[27m[24m[J[01;32m➜  [36mmascaras-de-pano[00m [01;34mgit:([31mdevise[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36mmascaras-de-pano[00m [01;34mgit:([31mdevise[34m) [33m✗[00m [K[4mc[24m[24m[32mc[32md[39m [39m[4mc[24m[39m [24m [4mc[24m[24m[32mc[32md[39m [4m.[24m[4m.[4m.[24m[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                             ]2;gabrielbdornas@gabrielbdornas: ~/code/gabrielbdornas]1;..abrielbdornas[0m[27m[24m[J[01;32m➜  [36mgabrielbdornas[00m [K[?1h=[?2004h[4mc[24m[24m[32mc[32md[39m [4mm[24m[4mm[4ma[24m[4mm[24m[24m [24m [4mc[24m[4mc[4mo[24m[4mo[4md[24m[4md[4me[24m[4me[4mi-[24m[4m-[4mb[24m[4mb[4ml[24m[4ml[4mo[24m[4mo[4mg-p[24m[4mp[4mo[24m[4mo[4msts-api[1m[4m/[0m[24m[4mi[24m[0m[24m [?1l>[?2004l
+]2;cd codei-blog-posts-api]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                             ]2;gabrielbdornas@gabrielbdornas: ~/code/gabrielbdornas/codei-blog-posts-api]1;..log-posts-api[0m[27m[24m[J[01;32m➜  [36mcodei-blog-posts-api[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mr[39m[1m[31mr[1m[31ma[0m[39m[1m[31mr[1m[31ma[1m[31mi[0m[39m[1m[31mi[1m[31ml[0m[39m[0m[32mr[0m[32ma[0m[32mi[0m[32ml[32ms[39m [4ms[24m[?1l>[?2004l[24ms
+]2;rails s]1;rails=> Booting Puma
+=> Rails 6.0.3.4 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 4.3.6 (ruby 2.6.5-p114), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://127.0.0.1:3000
+* Listening on tcp://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/" for ::1 at 2020-10-27 11:05:22 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 616)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 190)
+Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 40728)
+
+
+Started GET "/posts/update" for ::1 at 2020-10-27 11:05:50 -0300
+Processing by PostsController#update as HTML
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:6:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Segundo Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api. Final"], ["content", "# TerminalEvery operating system comes with some kind of terminal application built inand they'll be fine to use for us.A terminal is an application that doesn't do much more but provide a window torun another program called a \"shell\". A shell is a text-based program so itdoes not have a window and thus needs the terminal to be run on your graphicaluser interface.A shell is an interactive program that waits for you to type a command and hitenter (or \"return\"). It will then run the command display any output andthen again sit and wait for you to type the next command.This is how working with computers was done in early times before there was theidea of a graphical user interface with clickable icons windows and a mouse asan input device. Instead everything was done by typing commands.While this might take a little while for you to get used to you'll discoverwhy many programmers feel that working with the shell helps them be so muchmore productive and get simple things done so much quicker than using a mouseand a graphical interface.The default settings for most terminal applications that come built in tooperating systems are quite poor unfortunately. For example the Terminal.appon Mac OSX opens a tiny little mini window with a very small font. You wantto make the window much (much!) bigger and find the settings to picka bigger font size. As a programmer the terminal (along with your editor) isyour new home. You want to be as comfortable reading and writing in yourterminal as in any other application.In case you are using Microsoft Windows it is highly recommended to use anykind of unix based terminal. One option is Git-Bash (https://gitforwindows.org/).However as Ruby and Microsoft Windows are not best friends it is even betterto install the Windows Subsystem for Linux which is available here forWindows 10: https://docs.microsoft.com/en-us/windows/wsl/install-win10. Withthis option you can install everything you need for your Ruby developmentunder Ubuntu and use Bash as your main shell.All commands in the following texts are unix commands and will not work in aMicrosoft Windows terminal.Once you have started the terminal program you will see your shell's promptand can start typing commands. You'll want to learn at least the command `cd`which allows you to navigate to a particular directory (where you have storedyour code) and the command `ls` which lists the contents of a directory.Also learn how to use the command line completion using `tab`: For exampletype `cd` space and the first two or so letters of the directory you want tonavigate to then hit `tab`. The shell will complete the rest of the directoryname for you. If nothing happens then there are multiple directory namesstarting with the same few letters. In this case hit `tab` twice quicklyand your shell will display a list of choices. Type the next letterand hit `tab` again."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20segundo_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:14.361332"], ["created_at", "2020-10-27 14:05:50.874815"], ["updated_at", "2020-10-27 14:05:50.874815"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Primeiro Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api"], ["content", "# Text EditorFor our study groups we recommend using [Sublime Text](http://www.sublimetext.com)as a text editor which you can download and run on Mac OSX Ubuntu orWindows. This is an editor that has been specifically designed for writingcode comes with a lot of great tools and can be easily customized.Other text editors that might be worth looking at are Atom Textmate 2 and ifyou like to use some of the powerful oldschool tools from the early times ofUnix VIM and Emacs. These are all great editors to use.Whatever editor you use you want it to insert 2 spaces when you hit the \"tab\"key i.e. when you want to indent your code. Make sure your editor isconfigured to do this.For Sublime Text you can do the following: In the menu item \"Sublime Text\" goto \"Preferences\" and select \"Settings - User\". This opens up a configurationfile that you can edit just like any other file. Make sure it looks like this:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true}```Also we recommend enabling auto-saving your files. This will automaticallysave your changes when you switch to another application (like your terminal)and protect you from the mistake of forgetting to save:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true  \"save_on_focus_lost\": true}```Whenever you open a new file make sure to save it with a filename that endswith `.rb` first. This will tell the editor that you want this to be a Rubyfile. Your editor will start highlighting your code as Ruby code and enable otherRuby specific editor features. Alternatively select \"Ruby\" in the extensionsmenu at the bottom right.Some keyboard shortcuts that are extremely useful to know are:* In order to indent or unindent a single or multiple lines of code select  them and hit `tab` or `shift-tab` respectively.* In order to comment single or multiple lines of code select them and  hit `cmd-/` on Mac OSX or `ctrl-/` on Linux/Windows.* Cut out code with `cmd-x` copy code with `cmd-c` and paste it with  `cmd-v` on Mac OSX on Linux/Windows use the `ctrl` key instead."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20primeiro_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:05.509491"], ["created_at", "2020-10-27 14:05:50.879835"], ["updated_at", "2020-10-27 14:05:50.879835"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  Rendering posts/update.html.erb within layouts/application
+  Rendered posts/update.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 217)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 26)
+Completed 200 OK in 30ms (Views: 9.1ms | ActiveRecord: 5.6ms | Allocations: 25288)
+
+
+Started GET "/posts/update" for ::1 at 2020-10-27 11:07:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/update"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-10-27 11:08:39 -0300 ===
+- Goodbye!
+Exiting
+[1m[7m%[27m[1m[0m                                                                                                                                                                             ]2;gabrielbdornas@gabrielbdornas: ~/code/gabrielbdornas/codei-blog-posts-api]1;..log-posts-api[0m[27m[24m[J[01;32m➜  [36mcodei-blog-posts-api[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mr[39m[1m[31mr[1m[31ma[0m[39m[1m[31mr[1m[31ma[1m[31mi[0m[39m[1m[31mi[1m[31ml[0m[39m[0m[32mr[0m[32ma[0m[32mi[0m[32ml[32ms[39m [4ms[24m[?1l>[?2004l[24ms
+]2;rails s]1;rails=> Booting Puma
+=> Rails 6.0.3.4 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 4.3.6 (ruby 2.6.5-p114), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://127.0.0.1:3000
+* Listening on tcp://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/update_posts" for ::1 at 2020-10-27 11:08:54 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/update_posts"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/update_posts" for ::1 at 2020-10-27 11:09:45 -0300
+Processing by PostsController#update as HTML
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:6:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Segundo Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api. Final"], ["content", "# TerminalEvery operating system comes with some kind of terminal application built inand they'll be fine to use for us.A terminal is an application that doesn't do much more but provide a window torun another program called a \"shell\". A shell is a text-based program so itdoes not have a window and thus needs the terminal to be run on your graphicaluser interface.A shell is an interactive program that waits for you to type a command and hitenter (or \"return\"). It will then run the command display any output andthen again sit and wait for you to type the next command.This is how working with computers was done in early times before there was theidea of a graphical user interface with clickable icons windows and a mouse asan input device. Instead everything was done by typing commands.While this might take a little while for you to get used to you'll discoverwhy many programmers feel that working with the shell helps them be so muchmore productive and get simple things done so much quicker than using a mouseand a graphical interface.The default settings for most terminal applications that come built in tooperating systems are quite poor unfortunately. For example the Terminal.appon Mac OSX opens a tiny little mini window with a very small font. You wantto make the window much (much!) bigger and find the settings to picka bigger font size. As a programmer the terminal (along with your editor) isyour new home. You want to be as comfortable reading and writing in yourterminal as in any other application.In case you are using Microsoft Windows it is highly recommended to use anykind of unix based terminal. One option is Git-Bash (https://gitforwindows.org/).However as Ruby and Microsoft Windows are not best friends it is even betterto install the Windows Subsystem for Linux which is available here forWindows 10: https://docs.microsoft.com/en-us/windows/wsl/install-win10. Withthis option you can install everything you need for your Ruby developmentunder Ubuntu and use Bash as your main shell.All commands in the following texts are unix commands and will not work in aMicrosoft Windows terminal.Once you have started the terminal program you will see your shell's promptand can start typing commands. You'll want to learn at least the command `cd`which allows you to navigate to a particular directory (where you have storedyour code) and the command `ls` which lists the contents of a directory.Also learn how to use the command line completion using `tab`: For exampletype `cd` space and the first two or so letters of the directory you want tonavigate to then hit `tab`. The shell will complete the rest of the directoryname for you. If nothing happens then there are multiple directory namesstarting with the same few letters. In this case hit `tab` twice quicklyand your shell will display a list of choices. Type the next letterand hit `tab` again."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20segundo_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:14.361332"], ["created_at", "2020-10-27 14:09:45.846952"], ["updated_at", "2020-10-27 14:09:45.846952"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Primeiro Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api"], ["content", "# Text EditorFor our study groups we recommend using [Sublime Text](http://www.sublimetext.com)as a text editor which you can download and run on Mac OSX Ubuntu orWindows. This is an editor that has been specifically designed for writingcode comes with a lot of great tools and can be easily customized.Other text editors that might be worth looking at are Atom Textmate 2 and ifyou like to use some of the powerful oldschool tools from the early times ofUnix VIM and Emacs. These are all great editors to use.Whatever editor you use you want it to insert 2 spaces when you hit the \"tab\"key i.e. when you want to indent your code. Make sure your editor isconfigured to do this.For Sublime Text you can do the following: In the menu item \"Sublime Text\" goto \"Preferences\" and select \"Settings - User\". This opens up a configurationfile that you can edit just like any other file. Make sure it looks like this:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true}```Also we recommend enabling auto-saving your files. This will automaticallysave your changes when you switch to another application (like your terminal)and protect you from the mistake of forgetting to save:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true  \"save_on_focus_lost\": true}```Whenever you open a new file make sure to save it with a filename that endswith `.rb` first. This will tell the editor that you want this to be a Rubyfile. Your editor will start highlighting your code as Ruby code and enable otherRuby specific editor features. Alternatively select \"Ruby\" in the extensionsmenu at the bottom right.Some keyboard shortcuts that are extremely useful to know are:* In order to indent or unindent a single or multiple lines of code select  them and hit `tab` or `shift-tab` respectively.* In order to comment single or multiple lines of code select them and  hit `cmd-/` on Mac OSX or `ctrl-/` on Linux/Windows.* Cut out code with `cmd-x` copy code with `cmd-c` and paste it with  `cmd-v` on Mac OSX on Linux/Windows use the `ctrl` key instead."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20primeiro_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:05.509491"], ["created_at", "2020-10-27 14:09:45.855604"], ["updated_at", "2020-10-27 14:09:45.855604"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  Rendering posts/update.html.erb within layouts/application
+  Rendered posts/update.html.erb within layouts/application (Duration: 0.2ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 627)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 190)
+Completed 200 OK in 80ms (Views: 54.5ms | ActiveRecord: 10.1ms | Allocations: 54105)
+
+
+Started GET "/update_posts" for ::1 at 2020-10-27 11:09:48 -0300
+Processing by PostsController#update as HTML
+  [1m[36mPost Destroy (4.7ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:6:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Segundo Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api. Final"], ["content", "# TerminalEvery operating system comes with some kind of terminal application built inand they'll be fine to use for us.A terminal is an application that doesn't do much more but provide a window torun another program called a \"shell\". A shell is a text-based program so itdoes not have a window and thus needs the terminal to be run on your graphicaluser interface.A shell is an interactive program that waits for you to type a command and hitenter (or \"return\"). It will then run the command display any output andthen again sit and wait for you to type the next command.This is how working with computers was done in early times before there was theidea of a graphical user interface with clickable icons windows and a mouse asan input device. Instead everything was done by typing commands.While this might take a little while for you to get used to you'll discoverwhy many programmers feel that working with the shell helps them be so muchmore productive and get simple things done so much quicker than using a mouseand a graphical interface.The default settings for most terminal applications that come built in tooperating systems are quite poor unfortunately. For example the Terminal.appon Mac OSX opens a tiny little mini window with a very small font. You wantto make the window much (much!) bigger and find the settings to picka bigger font size. As a programmer the terminal (along with your editor) isyour new home. You want to be as comfortable reading and writing in yourterminal as in any other application.In case you are using Microsoft Windows it is highly recommended to use anykind of unix based terminal. One option is Git-Bash (https://gitforwindows.org/).However as Ruby and Microsoft Windows are not best friends it is even betterto install the Windows Subsystem for Linux which is available here forWindows 10: https://docs.microsoft.com/en-us/windows/wsl/install-win10. Withthis option you can install everything you need for your Ruby developmentunder Ubuntu and use Bash as your main shell.All commands in the following texts are unix commands and will not work in aMicrosoft Windows terminal.Once you have started the terminal program you will see your shell's promptand can start typing commands. You'll want to learn at least the command `cd`which allows you to navigate to a particular directory (where you have storedyour code) and the command `ls` which lists the contents of a directory.Also learn how to use the command line completion using `tab`: For exampletype `cd` space and the first two or so letters of the directory you want tonavigate to then hit `tab`. The shell will complete the rest of the directoryname for you. If nothing happens then there are multiple directory namesstarting with the same few letters. In this case hit `tab` twice quicklyand your shell will display a list of choices. Type the next letterand hit `tab` again."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20segundo_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:14.361332"], ["created_at", "2020-10-27 14:09:48.274533"], ["updated_at", "2020-10-27 14:09:48.274533"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("name", "resume", "content", "author", "reading_time", "github_link", "md_editing_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Primeiro Exemplo Teste - Gerar api index e show routes"], ["resume", "Post resume: Este é um pequeno exemplo de como ficarão os artigos listados via api"], ["content", "# Text EditorFor our study groups we recommend using [Sublime Text](http://www.sublimetext.com)as a text editor which you can download and run on Mac OSX Ubuntu orWindows. This is an editor that has been specifically designed for writingcode comes with a lot of great tools and can be easily customized.Other text editors that might be worth looking at are Atom Textmate 2 and ifyou like to use some of the powerful oldschool tools from the early times ofUnix VIM and Emacs. These are all great editors to use.Whatever editor you use you want it to insert 2 spaces when you hit the \"tab\"key i.e. when you want to indent your code. Make sure your editor isconfigured to do this.For Sublime Text you can do the following: In the menu item \"Sublime Text\" goto \"Preferences\" and select \"Settings - User\". This opens up a configurationfile that you can edit just like any other file. Make sure it looks like this:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true}```Also we recommend enabling auto-saving your files. This will automaticallysave your changes when you switch to another application (like your terminal)and protect you from the mistake of forgetting to save:```json{  \"tab_size\": 2  \"translate_tabs_to_spaces\": true  \"save_on_focus_lost\": true}```Whenever you open a new file make sure to save it with a filename that endswith `.rb` first. This will tell the editor that you want this to be a Rubyfile. Your editor will start highlighting your code as Ruby code and enable otherRuby specific editor features. Alternatively select \"Ruby\" in the extensionsmenu at the bottom right.Some keyboard shortcuts that are extremely useful to know are:* In order to indent or unindent a single or multiple lines of code select  them and hit `tab` or `shift-tab` respectively.* In order to comment single or multiple lines of code select them and  hit `cmd-/` on Mac OSX or `ctrl-/` on Linux/Windows.* Cut out code with `cmd-x` copy code with `cmd-c` and paste it with  `cmd-v` on Mac OSX on Linux/Windows use the `ctrl` key instead."], ["author", "Gabriel Braico Dornas"], ["reading_time", "05 minutos"], ["github_link", "github.com/gabrielbdornas/codei-blog-posts-api/blob/master/db/posts_sources/template_examples/20201026%20-%20primeiro_exemplo_teste.md"], ["md_editing_date", "2020-10-27 00:51:05.509491"], ["created_at", "2020-10-27 14:09:48.279843"], ["updated_at", "2020-10-27 14:09:48.279843"]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in update'
+  Rendering posts/update.html.erb within layouts/application
+  Rendered posts/update.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+ 

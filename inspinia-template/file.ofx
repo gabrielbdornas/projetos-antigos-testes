@@ -1,0 +1,105 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20201025120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>1967-4</BRANCHID>
+               <ACCTID>44250-X</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20200929120000[-3:BRT]</DTSTART>
+               <DTEND>20201026120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201002120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-32.00</TRNAMT>
+                  <FITID>20201002132000</FITID>
+                  <CHECKNUM>000000184914</CHECKNUM>
+                  <REFNUM>184.914</REFNUM>
+                  <MEMO>Compra com Cartão - 02/10 23:35 BLUE MARTINI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201009120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>15552.62</TRNAMT>
+                  <FITID>20201009015552620</FITID>
+                  <CHECKNUM>000000202009</CHECKNUM>
+                  <REFNUM>202.009</REFNUM>
+                  <MEMO>Recebimento de Proventos - FUNDACAO HOSPITALAR DO ESTADO DE MG FH</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201009120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-20000.00</TRNAMT>
+                  <FITID>20201009120000000</FITID>
+                  <CHECKNUM>619000135659</CHECKNUM>
+                  <REFNUM>608.619.000.135.659</REFNUM>
+                  <MEMO>Transferência enviada - 09/10 8619     135659-3 RENATA FERREIR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201013120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>862.57</TRNAMT>
+                  <FITID>202010130862570</FITID>
+                  <CHECKNUM>000034634657</CHECKNUM>
+                  <REFNUM>34.634.657</REFNUM>
+                  <MEMO>TED-Crédito em Conta - 197 0000 22896431000110 picpay servico</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201013120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-2.56</TRNAMT>
+                  <FITID>2020101312560</FITID>
+                  <CHECKNUM>000511058901</CHECKNUM>
+                  <REFNUM>511.058.901</REFNUM>
+                  <MEMO>Cobrança de Juros</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201014120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>2.56</TRNAMT>
+                  <FITID>2020101402560</FITID>
+                  <CHECKNUM>000511058901</CHECKNUM>
+                  <REFNUM>511.058.901</REFNUM>
+                  <MEMO>Devolução Juros-Chq Espec - Data balanc.: 13/10/2020</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20201016120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>1000.00</TRNAMT>
+                  <FITID>2020101601000000</FITID>
+                  <CHECKNUM>000679547227</CHECKNUM>
+                  <REFNUM>679.547.227</REFNUM>
+                  <MEMO>TED-Crédito em Conta - 341 3615     5713430669 DEBORA FERREIR</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>2335.39</BALAMT>
+               <DTASOF>20201026120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

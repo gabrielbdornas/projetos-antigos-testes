@@ -1,0 +1,23 @@
+<div class="container py-3">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <%= image_tag(@product.photo_url, size: "550x320") %>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <h2><%= @product.name %> <%= @teste1 %></h2>
+      <p><%= @product.description %><%= @teste3 %></p>
+      <div class="d-flex justify-content-between">
+        <p><strong>Preço: R$ <%= number_with_delimiter(Money.new(@product.price,"brl"), :delimiter => ".", :separator => ",") %></strong></p>
+        <div>
+          <form action="/orders/show" method="GET">
+            <script
+             src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+             data-preference-id="<%= @preference_id %>">
+            </script>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

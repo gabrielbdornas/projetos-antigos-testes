@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="container">
+
+      <%= form_tag out_syntheses_import_path, multipart: true do %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Importar Síntese" %>
+      <% end %>
+
+  <% @import.each do |import| %>
+    <%= "#{import.competence} | #{import.sheet} | #{import.sequence}" %> <br>
+  <% end %>
+  </div>
+</div>
+

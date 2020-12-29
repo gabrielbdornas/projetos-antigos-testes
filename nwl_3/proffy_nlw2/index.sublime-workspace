@@ -1,0 +1,987 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"curr",
+				"current_api_v1_user\tabc"
+			],
+			[
+				"compa",
+				"company_admin\tabc"
+			],
+			[
+				"auto",
+				"authorize\tabc"
+			],
+			[
+				"company",
+				"company_name\tabc"
+			],
+			[
+				"cur",
+				"current_api_v1_user\tabc"
+			],
+			[
+				"sc",
+				"sckills\tabc"
+			],
+			[
+				"lo",
+				"logicOperations\tabc"
+			],
+			[
+				"swi",
+				"switchSexo\tabc"
+			],
+			[
+				"re",
+				"resultado\tabc"
+			],
+			[
+				"con",
+				"concat\tabc"
+			],
+			[
+				"nmu",
+				"numero2"
+			],
+			[
+				"numer",
+				"numero1\tabc"
+			],
+			[
+				"proc",
+				"procedures\t(20200520212933_procedures.rb)"
+			],
+			[
+				"zip",
+				"zip_code\tabc"
+			],
+			[
+				"requisitions",
+				"requisitions_dates_values\tabc"
+			],
+			[
+				"role",
+				"roles#new\t(routes.rb)"
+			],
+			[
+				"Company",
+				"CompanyConfiguration\tabc"
+			],
+			[
+				"Compa",
+				"CompanyConfiguration\tabc"
+			],
+			[
+				"Com",
+				"CompanyConfiguration\tabc"
+			],
+			[
+				"company_",
+				"company_configurations\tabc"
+			],
+			[
+				"teste",
+				"teste1\tabc"
+			],
+			[
+				"fini",
+				"finish_time\tabc"
+			],
+			[
+				"start",
+				"start_time\tabc"
+			],
+			[
+				"fin",
+				"finish_time\tabc"
+			],
+			[
+				"render",
+				"render_error\tabc"
+			],
+			[
+				"va",
+				"validation_code\tabc"
+			],
+			[
+				"vali",
+				"validation_code\t(schema.rb)"
+			],
+			[
+				"capi",
+				"capitalize\tabc"
+			],
+			[
+				"munic",
+				"municipios\tabc"
+			],
+			[
+				"la",
+				"language\tabc"
+			],
+			[
+				"op",
+				"options\tabc"
+			],
+			[
+				"crea",
+				"created_at\tabc"
+			],
+			[
+				"create",
+				"created_at\t(index.html.erb)"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"m",
+				"mb-2\tabc"
+			],
+			[
+				"jus",
+				"justify-content\tabc"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"ex",
+				"examples\t(examples_controller.rb)"
+			],
+			[
+				"para",
+				"params\tabc"
+			],
+			[
+				"validation",
+				"validation_code\t(registrations_controller.rb)"
+			],
+			[
+				"suc",
+				"success\t(registrations_controller.rb)"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"au",
+				"authenticate\tabc"
+			],
+			[
+				"delete",
+				"delete_all\tabc"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/gabrielbdornas/code/gabrielbdornas/proffy/style.css",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/config/locales/devise.en.yml",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/roles_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/requisition_policy.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/requisitions_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/base_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/company.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/company_configurations_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/company_configuration_policy.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/schema/20200105 - Schema.xml",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/.env",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/test/controllers/requisitions_controller_test.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/introducao/3_0_funcoes.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/6_0_condicao_ternaria.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/5_0_operadores_logicos.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/4_0_condicionais.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/3_0_funcoes.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/2_0_operacoes_matematicas.html",
+		"/home/gabrielbdornas/code/gabrielbdornas/javaScript/1_0_variaveis_e_dados.html",
+		"/home/gabrielbdornas/Downloads/FHEMIG/Rc26964.JAN",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RS22667_JAN_TEST_2.txt",
+		"/home/gabrielbdornas/Downloads/RA26921.MAI",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RRC2181770.JAN",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RS27626.JAN",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RS22667_JAN_TEST.txt",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RS22667.JAN",
+		"/home/gabrielbdornas/Downloads/FHEMIG/RS2181770.JAN",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/import.txt",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/views/syntheses/index.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/config/routes.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/controllers/syntheses_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/views/out_syntheses/index.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/schema.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200521224350_create_out_syntheses.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/hospital.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/procedure.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/synthesis.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/seeds.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200521224350_create_syntheses.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212934_create_procedures.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212933_create_procedure_sub_groups.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212931_create_hospitals.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/hospital_group.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200519212930_create_hospital_groups.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/complex.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212931_procedure_groups.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212932_procedure_sub_groups.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212933_procedures.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/procedure_group.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/procedure_sub_group.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200519212930_create_complexes.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia-landing/app/assets/stylesheets/application.scss",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia-landing/Gemfile",
+		"/home/gabrielbdornas/code/gabrielbdornas/rails-blog/db/migrate/20200714230339_migrate_bodyto_rich_body_articles.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/airbnb_forest_admin_gabriel/app/models/user.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/airbnb_forest_admin_gabriel/app/models/listing.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/airbnb_forest_admin_gabriel/Gemfile",
+		"/home/gabrielbdornas/code/gabrielbdornas/airbnb_forest_admin_gabriel/db/seeds.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/airbnb_forest_admin_gabriel/Gemfile.lock",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/views/api/v1/company_configurations/list_company_configuration_with_roles.json.jbuilder",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/config/routes.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/schema.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/document.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/digitals_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/digital.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/Gemfile",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200701200746_add_open_holiday_to_companies.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200630142021_change_column_to_new_from_bank_account.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/views/api/v1/requisitions/company_index.json.jbuilder",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/seeds.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/users/registrations_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/bank_codes.csv",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/bank_accounts_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200304194530_create_requisitions.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/bank_code.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/role_policy.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/addresses_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/companies_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/user.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/config/application.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/models/company_configuration.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/config/locales/en-BR.yml",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/services/twillio_service.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/views/api/v1/addresses/show.json.jbuilder",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/searches_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/company_policy.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/views/ambulatorial_sinteses/new.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/db/seeds.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/assets/stylesheets/pages/templates/template_1/components/_card_product.scss",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/topics/index.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/controllers/topics_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/db/migrate/20200526195057_create_topics.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/config/routes.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/models/course.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/models/topic.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/courses/index.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/components/_card_group_home.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/posts/show.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/db/migrate/20200526195055_create_courses.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/controllers/courses_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/models/user.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/db/schema.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/pages/home.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/app/views/posts/index.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/config/initializers/devise.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/codei-web-site/Gemfile",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/helpers/roles_helper.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/ambulatorial_sintese.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/procedimento.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/models/unidade.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/app/views/ambulatorial_sinteses/show.html.erb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520224350_create_ambulatorial_sinteses.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520221048_create_procedimentos.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200520212931_create_unidades.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/fhemig-faturamento/db/migrate/20200507211617_create_sia.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/validations_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/test/controllers/roles_controller_test.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200210201637_add_details_to_users.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200401193042_create_roles.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200518203909_correct_mininum_value_to_roles.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/db/migrate/20200505005529_add_admin_to_users.rb",
+		"/home/gabrielbdornas/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise_token_auth-1.1.3/>/dev/null",
+		"/home/gabrielbdornas/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise_token_auth-1.1.3/2>&1",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/config/initializers/devise_token_auth.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/cities_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/city_policy.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/controllers/api/v1/states_controller.rb",
+		"/home/gabrielbdornas/code/gabrielbdornas/blomia/app/policies/state_policy.rb"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 142.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"company po",
+				"app/policies/company_policy.rb"
+			],
+			[
+				"companies contr",
+				"app/controllers/api/v1/companies_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"roles",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"policy requisi",
+				"app/policies/requisition_policy.rb"
+			],
+			[
+				"requisitions contr",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"model compa",
+				"app/models/company.rb"
+			],
+			[
+				"company poli",
+				"app/policies/company_policy.rb"
+			],
+			[
+				"company contro",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"policy compa",
+				"app/policies/company_configuration_policy.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"company polic",
+				"app/policies/company_policy.rb"
+			],
+			[
+				"requisitions contro",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"requi",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"sessions contro",
+				"app/controllers/api/v1/users/sessions_controller.rb"
+			],
+			[
+				"PUMA.",
+				"config/puma.rb"
+			],
+			[
+				"initializers/aws.rb",
+				"config/initializers/aws.rb"
+			],
+			[
+				"initializers/cors.rb",
+				"config/initializers/cors.rb"
+			],
+			[
+				"synt",
+				"app/controllers/out_syntheses_controller.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"contro",
+				"app/controllers/out_syntheses_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"controller",
+				"app/controllers/out_syntheses_controller.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"SEED",
+				"db/seeds.rb"
+			],
+			[
+				"company model",
+				"app/models/company.rb"
+			],
+			[
+				"addres model",
+				"app/models/address.rb"
+			],
+			[
+				"address poli",
+				"app/policies/address_policy.rb"
+			],
+			[
+				"address contr",
+				"app/controllers/api/v1/addresses_controller.rb"
+			],
+			[
+				"com",
+				"app/models/company.rb"
+			],
+			[
+				".en",
+				".env"
+			],
+			[
+				"pages",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"registration",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"pages ",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"companies contro",
+				"app/controllers/api/v1/companies_controller.rb"
+			],
+			[
+				"companies ",
+				"app/controllers/api/v1/companies_controller.rb"
+			],
+			[
+				"pages contr",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"modal company",
+				"app/models/company.rb"
+			],
+			[
+				"company",
+				"app/models/company_configuration.rb"
+			],
+			[
+				"roles con",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"application",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"articles contro",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"index",
+				"app/assets/stylesheets/components/_index.scss"
+			],
+			[
+				"applica",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"article",
+				"app/models/article.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"list",
+				"app/models/listing.rb"
+			],
+			[
+				"se",
+				"db/seeds.rb"
+			],
+			[
+				"roles controll",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"roles conf",
+				"app/views/api/v1/company_configurations/list_company_configuration_with_roles.json.jbuilder"
+			],
+			[
+				"roles c",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"company configuration poli",
+				"app/policies/company_configuration_policy.rb"
+			],
+			[
+				"addresses contr",
+				"app/controllers/api/v1/addresses_controller.rb"
+			],
+			[
+				"registrations controller",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"addres",
+				"app/controllers/api/v1/addresses_controller.rb"
+			],
+			[
+				"company configurations contr",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"roles contr",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"base",
+				"app/controllers/api/v1/base_controller.rb"
+			],
+			[
+				"company configuration pol",
+				"app/policies/company_configuration_policy.rb"
+			],
+			[
+				"companies confi",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"role pol",
+				"app/policies/role_policy.rb"
+			],
+			[
+				"document mode",
+				"app/models/document.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"digitals",
+				"app/controllers/api/v1/digitals_controller.rb"
+			],
+			[
+				"digital",
+				"app/models/digital.rb"
+			],
+			[
+				"searche",
+				"app/controllers/api/v1/searches_controller.rb"
+			],
+			[
+				"searches",
+				"app/controllers/api/v1/searches_controller.rb"
+			],
+			[
+				"company_in",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"company_inde",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"company_index",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"company_",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"requisitions con",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"re",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"migrate",
+				"db/migrate/20200304194530_create_requisitions.rb"
+			],
+			[
+				"bank codes",
+				"db/migrate/20200626145329_bank_codes.rb"
+			],
+			[
+				"company_ind",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"company_indes",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"company index",
+				"app/views/api/v1/requisitions/company_index.json.jbuilder"
+			],
+			[
+				"role po",
+				"app/policies/role_policy.rb"
+			],
+			[
+				"company_configura",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"address",
+				"app/controllers/api/v1/addresses_controller.rb"
+			],
+			[
+				"companies",
+				"app/controllers/api/v1/companies_controller.rb"
+			],
+			[
+				"application.rb",
+				"config/application.rb"
+			],
+			[
+				"user mode",
+				"app/models/user.rb"
+			],
+			[
+				"application.",
+				"config/application.rb"
+			],
+			[
+				"registra",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"sessions",
+				"app/controllers/api/v1/users/sessions_controller.rb"
+			],
+			[
+				"company configurations controller",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"applicatio",
+				"config/application.rb"
+			],
+			[
+				"registr",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"APPLICATION.R",
+				"config/application.rb"
+			],
+			[
+				"company_configurations",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"role",
+				"app/models/role.rb"
+			],
+			[
+				"companies con",
+				"app/controllers/api/v1/companies_controller.rb"
+			],
+			[
+				"company_configuration_p",
+				"app/policies/company_configuration_policy.rb"
+			],
+			[
+				"company confi",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"requisitions cont",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"search",
+				"app/controllers/api/v1/searches_controller.rb"
+			],
+			[
+				"routs",
+				"config/routes.rb"
+			],
+			[
+				"company configurati",
+				"app/models/company_configuration.rb"
+			],
+			[
+				"company confi contro",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"company configuration po",
+				"app/policies/company_configuration_policy.rb"
+			],
+			[
+				"compan",
+				"app/models/company.rb"
+			],
+			[
+				"company conf contro",
+				"app/controllers/api/v1/company_configurations_controller.rb"
+			],
+			[
+				"policy req",
+				"app/policies/requisition_policy.rb"
+			],
+			[
+				"requisitions cotr",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"requisitions co",
+				"app/controllers/api/v1/requisitions_controller.rb"
+			],
+			[
+				"topic mo",
+				"app/models/topic.rb"
+			],
+			[
+				"course",
+				"app/models/course.rb"
+			],
+			[
+				"SEE",
+				"db/seeds.rb"
+			],
+			[
+				"user mo",
+				"app/models/user.rb"
+			],
+			[
+				"devis",
+				"config/initializers/devise.rb"
+			],
+			[
+				"regis",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"roles hel",
+				"app/helpers/roles_helper.rb"
+			],
+			[
+				"reg",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"roles contro",
+				"app/controllers/api/v1/roles_controller.rb"
+			],
+			[
+				"registratio",
+				"app/controllers/api/v1/users/registrations_controller.rb"
+			],
+			[
+				"devise in",
+				"config/initializers/devise.rb"
+			],
+			[
+				"rotes",
+				"test/controllers/roles_controller_test.rb"
+			],
+			[
+				"add",
+				"db/migrate/20200210201637_add_details_to_users.rb"
+			],
+			[
+				"migration users",
+				"db/migrate/20200505005529_add_admin_to_users.rb"
+			],
+			[
+				"migrate roles",
+				"db/migrate/20200518203909_correct_mininum_value_to_roles.rb"
+			],
+			[
+				"auth",
+				"config/initializers/devise_token_auth.rb"
+			],
+			[
+				"session",
+				"app/controllers/api/v1/users/sessions_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

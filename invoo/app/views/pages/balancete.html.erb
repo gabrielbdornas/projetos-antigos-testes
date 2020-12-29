@@ -1,0 +1,130 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Balancete</h2>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <i>Cadastro de Empresa</i>
+          </li>
+          <li class="breadcrumb-item">
+            <i>Importação</i>
+          </li>
+          <li class="breadcrumb-item">
+            <i>De-Para</i>
+          </li>
+          <li class="breadcrumb-item">
+            <i>Exceções</i>
+          </li>
+          <li class="breadcrumb-item active">
+            <strong>Balancete Contábil</strong>
+          </li>
+        </ol>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>Balancete Contábil</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                        </li>
+                    </ul> -->
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                        <thead>
+                        <tr>
+                          <th>Conta</th>
+                          <th>Reduzido</th>
+                          <th>Descrição</th>
+                          <th>Anterior</th>
+                          <th>Débitos</th>
+                          <th>Créditos</th>
+                          <th>Movimento</th>
+                          <th>Saldo Atual</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <% @import_accounts.each do |row| %>
+                         <tr class="gradeX">
+                           <td><%= row.client_account_number %></td>
+                           <td><%= row.cliente_account_reduction %></td>
+                           <td><%= row.client_account_description %></td>
+                           <td class='text-right'><%= number_to_currency(row.before_balance, unit: "", separator: ",", delimiter: ".", precision: 2) %></td>
+                           <td class='text-right'><%= number_to_currency(row.debit, unit: "", separator: ",", delimiter: ".", precision: 2) %></td>
+                           <td class='text-right'><%= number_to_currency(row.credit, unit: "", separator: ",", delimiter: ".", precision: 2) %></td>
+                           <td class='text-right'><%= number_to_currency(row.balance, unit: "", separator: ",", delimiter: ".", precision: 2) %></td>
+                           <td class='text-right'><%= number_to_currency(row.end_balance, unit: "", separator: ",", delimiter: ".", precision: 2) %></td>
+                         </tr>
+                       <% end %>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('.dataTables-example').DataTable({
+        pageLength: 25,
+        responsive: true,
+        dom: '<"html5buttons"B>lTfgitp',
+        buttons: [
+            { extend: 'copy'},
+            {extend: 'csv'},
+            {extend: 'excel', title: 'ExampleFile'},
+            {extend: 'pdf', title: 'ExampleFile'},
+
+            {extend: 'print',
+                customize: function (win){
+                    $(win.document.body).addClass('white-bg');
+                    $(win.document.body).css('font-size', '10px');
+
+                    $(win.document.body).find('table')
+                            .addClass('compact')
+                            .css('font-size', 'inherit');
+                }
+            }
+        ]
+
+    });
+
+
+});
+
+
+
+</script>
+
+<% end %>
+
+
+
+
+

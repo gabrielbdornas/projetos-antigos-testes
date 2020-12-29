@@ -1,0 +1,48 @@
+
+<div class="middle-box text-center loginscreen animated fadeInDown">
+  <h2>Redefinir</h2>
+  <p>Editar dados de acesso do usuário</p>
+
+  <div class="form-group m-t role:form">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="form-group">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: "Email" %>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Esperando confirmação para: <%= resource.unconfirmed_email %></div>
+    <% end %>
+      <div class="form-group">
+        <%= f.password_field :current_password, autocomplete: "new-password", class: 'form-control', placeholder: "Senha atual" %>
+      </div>
+        <% if @minimum_password_length %>
+          <em>Mínimo de caracteres: <%= @minimum_password_length %></em>
+        <% end %>
+
+
+      <div class="form-group">
+        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control', placeholder: "Nova senha" %>
+      </div>
+
+        <div class="form-group">
+
+
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control', placeholder: "Confirme sua nova senha" %>
+        </div>
+
+
+          <div class="actions">
+            <%= f.submit "Atualizar", class: 'btn btn-primary block full-width m-b'  %>
+          </div>
+  <% end %>
+
+  <h3>Cancelar minha conta?</h3>
+
+  <p><%= button_to "Cancelar", registration_path(resource_name), data: { confirm: "Você tem certeza?" }, method: :delete, class:'btn btn-outline-danger' %></p>
+
+  <%= link_to "Voltar", :back %>
+
+</div>
+</div>
+

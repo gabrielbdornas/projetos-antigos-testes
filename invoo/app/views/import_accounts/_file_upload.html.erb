@@ -1,0 +1,69 @@
+<div class="wrapper wrapper-content animated fadeIn">
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="ibox">
+              <div class="ibox-title">
+                  <h2>Importação de Dados Financeiros</h2>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <i> <%= link_to 'Cadastro', new_company_path %> </i>
+                    </li>
+                    <li class="breadcrumb-item active">
+                      <strong>Importação</strong>
+                    </li>
+                  </ol>
+              </div>
+              <div class="ibox-content">
+
+                  <p>
+                      Selecione o arquivo de balancete a ser importado.
+                  </p>
+                  <!-- Possível usar o from-to aqui? -->
+                  <%= form_tag import_company_import_accounts_path(params[:company_id]), multipart: true do %>
+                    <%= file_field_tag :file %>
+                    <%= submit_tag "Importar Balancete" %>
+                  <% end %>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    Dropzone.options.dropzoneForm = {
+        paramName: "file", // The name that will be used to transfer the file
+        maxFilesize: 2, // MB
+        dictDefaultMessage: "<strong>Drop files here or click to upload. </strong></br> (This is just a demo dropzone. Selected files are not actually uploaded.)"
+    };
+
+    $(document).ready(function(){
+
+        var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+            lineNumbers: true,
+            matchBrackets: true
+        });
+
+        var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
+            lineNumbers: true,
+            matchBrackets: true
+        });
+
+        var editor_two = CodeMirror.fromTextArea(document.getElementById("code3"), {
+            lineNumbers: true,
+            matchBrackets: true
+        });
+
+    });
+
+});
+
+</script>
+
+<% end %>

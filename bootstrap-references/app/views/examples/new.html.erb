@@ -1,0 +1,5 @@
+<%= simple_form_for [ @page, @example ] do |f| %>
+  <%= f.input :example_topic %>
+  <%= f.input :content %>
+  <%= f.submit "Crie um novo exemplo", class: "btn btn-primary" %>
+<% end %>

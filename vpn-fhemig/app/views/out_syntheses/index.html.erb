@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="container">
+    <br>
+    <br>
+    <h1>Digite \\10.183.112.15 para acessar a pasta aonde o txt com o numero da estação será salva, utilize o comando "ipfconfig /all" no prompt de comando</h1>
+    <br>
+    <br>
+    <h2>Faltan <strong style="color:red"><%= @vpns.count %></strong> vpns para serem configuradas</h2>
+    <br>
+    <br>
+      <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Estação</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Observação</th>
+        </tr>
+      </thead>
+        <% @vpns.each do |import| %>
+          <tbody>
+            <tr>
+              <th scope="row"><%= import.estacao %></th>
+              <td><%= import.nome %></td>
+              <td><%= import.observacao %></td>
+            </tr>
+          </tbody>
+      <% end %>
+      </table>
+  </div>
+</div>
+

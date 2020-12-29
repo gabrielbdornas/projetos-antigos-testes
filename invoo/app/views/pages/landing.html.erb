@@ -1,0 +1,776 @@
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+
+        <div class="container">
+            <img src="<%= image_path('landing/LogoOrange.png') %>" alt="logo"/>
+            <div class="navbar-header page-scroll">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <% if user_signed_in? %>
+                      <li>
+                        <%= link_to 'Home', home_path, class: 'nav-link page-scroll' %>
+                      </li>
+                    <% else %>
+                      <li>
+                        <%= link_to 'Home', default_login_path, class: 'nav-link page-scroll' %>
+                      </li>
+                    <% end %>
+
+                    <!-- <li><a class="nav-link page-scroll" href="#features">Features</a></li> -->
+                    <li><a class="nav-link page-scroll" href="#team">Equipe</a></li>
+                    <!-- <li><a class="nav-link page-scroll" href="#testimonials">Testimonials</a></li> -->
+                    <li><a class="nav-link page-scroll" href="#pricing">Preços</a></li>
+                    <li><a class="nav-link page-scroll" href="#contact">Contato</a></li>
+                    <% if user_signed_in? %>
+                      <li> <%= link_to 'Login', home_path, class: 'nav-link page-scroll' %> </li>
+                    <% else %>
+                      <li> <%= link_to 'Login', default_login_path, class: 'nav-link page-scroll' %> </li>
+                    <% end %>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<div id="inSlider" class="carousel slide" data-ride="carousel" >
+<ol class="carousel-indicators">
+    <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#inSlider" data-slide-to="1"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+        <div class="container">
+            <div class="carousel-caption">
+                <h1>Automatize Sua <br/>Controladoria em um </br> clique</h1>
+                <p>Automatizamos suas demonstrações financeiras</p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="#workflow" role="button">SAIBA MAIS</a>
+                </p>
+            </div>
+            <div class="carousel-image wow zoomIn">
+                <img src="<%= image_path('landing/laptop.png') %>" alt="laptop"/>
+            </div>
+        </div>
+        <!-- Set background for slide in css -->
+        <div class="header-back one"></div>
+
+    </div>
+    <div class="carousel-item">
+        <div class="container">
+            <div class="carousel-caption blank">
+                <h1>Não fazemos Gestão Financeira <br/> Fazemos Controladoria </h1>
+                <p>Preparamos Demonstrações Financeiras e Indicadores para Investidores</p>
+                <p><a class="btn btn-lg btn-primary" href="#workflow" role="button">SAIBA MAIS</a></p>
+            </div>
+        </div>
+        <!-- Set background for slide in css -->
+        <div class="header-back two"></div>
+    </div>
+</div>
+<a class="carousel-control-prev" href="#inSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#inSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+
+
+<section id="features" class="container services">
+<div class="row">
+    <div class="col-sm-3">
+        <h2>FAÇA CONTROLADORIA VOCÊ MESMO</h2>
+        <p>Substituímos a necessidade de contratação de profissionais de Controladoria e reduzimos seus custos de backoffice, pois automatizamos a preparação de relatórios de reporte a acionistas, investidores, órgãos reguladores e auditoria externa. Além disso não há necessidade de implantação do InvoO. Você faz o seu cadastro e já começa a usar.</p>
+        <!-- <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p> -->
+    </div>
+    <div class="col-sm-3">
+        <h2>RELATÓRIOS PADRONIZÁVEIS</h2>
+        <p>A partir da importação do balancete Contábil, geramos as Demonstrações Financeiras em formato societário atendendo às leis e normas contábeis aplicáveis a sua empresa. Geramos, também, Demonstrações Financeiras Gerenciais de acordo com os modelos do setor da sua empresa e/ou às necessidades dos acionistas, investidores e Diretoria Executiva. </p>
+        <!-- <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p> -->
+    </div>
+    <div class="col-sm-3">
+        <h2>ACOMPANHAMENTO DE INDICADORES</h2>
+        <p>A partir da preparação das Demonstrações Financeiras, geramos gráficos de evolução dos principais indicadores econômicos e financeiros utilizados pelo mercado. Adicionalmente, podemos padronizar indicadores específicos para o seu setor de atuação.</p>
+        <!-- <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p> -->
+    </div>
+    <div class="col-sm-3">
+        <h2>GRÁFICOS DE PERFORMANCE</h2>
+        <p>A partir dos indicadores de desempenho e das Demonstrações Financeiras preparamos automaticamente os gráficos de evolução e composição das principais contas contábeis (Receitas de Vendas, Custos e Despesas, Capital de Giro, Endividamento, EBITDA e afins). Estes gráficos podem ser utilizados em apresentações para investidores, acionistas e Diretoria Executiva.</p>
+        <!-- <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p> -->
+    </div>
+</div>
+</section>
+
+<section  class="container features">
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h1>Importe o Balancete Contábil de qualquer Sistema ERP<br/> <span class="navy"> nos formatos CSV e Excel</span> </h1>
+        <p>Controladoria com Eficiência e Segurança. Padrão internacional e de mercado.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3 text-center wow fadeInLeft">
+        <div>
+            <i class="fa fa-mobile features-icon"></i>
+            <h2>Mobilidade Total</h2>
+            <p>Você pode preparar seus relatórios e apresentações de qualquer lugar e em qualquer device. Você só precisará importar seu Balancete Contábil no formato CSV para o InvoO. Sem necessidade de implantação.</p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-bar-chart features-icon"></i>
+            <h2>Gráficos e Dashboards</h2>
+            <p>Os gráficos e dashboards são dinâmicos e atendem aos padrões visuais e técnicos das indústrias financeira e de investimentos (venture capital e private equity).</p>
+        </div>
+    </div>
+    <div class="col-md-6 text-center  wow zoomIn">
+        <img src="<%= image_path('landing/perspective.png') %>" alt="dashboard" class="img-fluid">
+    </div>
+    <div class="col-md-3 text-center wow fadeInRight">
+        <div>
+            <i class="fa fa-envelope features-icon"></i>
+            <h2>Exportação de Relatórios</h2>
+            <p>Você pode gerar e exportar os relatórios, as Demonstrações Financeiras, os Indicadores e os Gráficos em arquivo Excel e em Adobe Acrobat (.pdf). </p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-ambulance features-icon"></i>
+            <h2>Suporte Profissional</h2>
+            <p>Se você tiver dúvidas técnicas sobre como usar o InvoO ou mesmo dúvidas técnicas de Controladoria, estamos prontos a te ajudar. Nossa equipe é formada por profissionais experientes das áreas de Controladoria, Investimentos e Tecnologia. É só entrar em contato conosco pelo Chat InvoO.</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h1>Suas Informações Sempre Seguras e Consistentes</h1>
+        <p>Suas informações são armazenadas em Cloud na AWS. Aplicamos regras rígidas para consistência dos relatórios e informações geradas. </p>
+    </div>
+</div>
+<div class="row features-block">
+    <div class="col-lg-6 features-text wow fadeInLeft">
+        <small>COMPLIANCE & SEGURANÇA</small>
+        <h2>CONTROLE DE AÇÕES E VERSÕES. VERIFICAÇÃO DE EXCEÇÕES. CONSISTÊNCIA DE INFORMAÇÕES.</h2>
+        <p>O InvoO controla todas as ações dos usuários cadastrados assim como todas as versões dos Balancetes importados, dos relatórios e Demonstrações Financeiras geradas. Não há a possibilidade de alteração ou imputação de saldos ou movimentações contábeis no InvoO. Na preparação de relatórios gerenciais o InvoO registra a conciliação entre as contas contábeis dos Balancetes importados e as contas gerenciais incluídas nos relatórios ou Demonstrações Financeiras geradas ("De/Para").  </p>
+        <!-- <a href="" class="btn btn-primary">Learn more</a> -->
+    </div>
+    <div class="col-lg-6 text-right wow fadeInRight">
+        <img src="<%= image_path('landing/dashboard.png') %>" alt="dashboard" class="img-fluid float-right">
+    </div>
+</div>
+</section>
+
+<section id="team" class="gray-section team">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Equipe</h1>
+            <p>Somos empreendedores apaixonados por facilitar a vida de outros empreendedores. Amamos tecnologia e finanças.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 wow fadeInLeft">
+            <div class="team-member">
+                <img src="<%= image_path('landing/Andre.png') %>" class="img-fluid rounded-circle img-small" alt="">
+                <h4><span class="navy">André</span> Simão</h4>
+                <p>CEO</br> Especialista em finanças. </p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-3 wow fadeInLeft">
+            <div class="team-member">
+                <img src="<%= image_path('landing/Debora.png') %>" class="img-fluid rounded-circle img-small" alt="">
+                <h4><span class="navy">Débora</span> Torres</h4>
+                <p>Head de Design</br> Dona do FrontEnd. </p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        <!-- <div class="col-sm-3 wow fadeInLeft">
+            <div class="team-member">
+                <img src="<%= image_path('landing/avatar1.jpg') %>" class="img-fluid rounded-circle" alt="">
+                <h4><span class="navy">John</span> Novak</h4>
+                <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="col-sm-3 wow fadeInRight">
+            <div class="team-member">
+                <img src="<%= image_path('landing/Vinicius.png') %>" class="img-fluid rounded-circle img-small" alt="">
+                <h4><span class="navy">Vinícius</span> Líbero</h4>
+                <p>Co-Head de Desenvolvimento.</br>Um dos cérebros que toca o BackEnd.</p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-3 wow fadeInRight">
+            <div class="team-member">
+                <img src="<%= image_path('landing/Gabriel.png') %>" class="img-fluid rounded-circle img-small" alt="">
+                <h4><span class="navy">Gabriel</span> Dornas</h4>
+                <p>Co-Head de Desenvolvimento.</br>O outro cérebro que toca o BackEnd</p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center m-t-lg m-b-lg">
+            <p>Se você ama tecnologia, aprendizado de máquina, negócios e finanças, venha trabalhar conosco. Mande seu cv para rh@invoo.me.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="features">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Teste Gratuitamente por 30 Dias</h1>
+            <p>Queremos muito ter você e sua empresa utilizando o InvoO </p>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-3 features-text wow fadeInLeft">
+            <small>INVoO</small>
+            <h2>EXPERIMENTE</h2>
+            <p>Queremos muito ajudar você a focar todo o seu tempo e seus recursos financeiros no desenvolvimento do seu negócio. Por isso criamos o InvoO e queremos você e seu negócio conosco. Portanto, te oferecemos 30 dias para usar o InvoO gratuitamente.</p>
+            <%= link_to 'CADASTRAR', new_user_registration_path, class: 'btn btn-primary' %>
+            <!-- <a href="" class="btn btn-primary">Learn more</a> -->
+        </div>
+        <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+            <img src="<%= image_path('landing/iphone.jpg') %>" class="img-fluid" alt="dashboard">
+        </div>
+        <div class="col-lg-3 features-text text-right wow fadeInRight">
+            <small>FREE TRIAL</small>
+            <h2>COMECE AGORA </h2>
+            <p>Gaste menos tempo e recursos financeiros na preparação de relatórios e demonstrações financeiras para investidores, acionistas e órgãos reguladores. Além disso acompanhe a performance econômico-financeira do seu negócio de forma simples e intuitiva. Clique no botão abaixo, cadastre seu usuário e teste o InvoO por 30 dias gratuitamente.</p>
+            <%= link_to 'CADASTRAR', new_user_registration_path, class: 'btn btn-primary' %>
+            <!-- <a href="" class="btn btn-primary">CADASTRAR</a> -->
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="workflow" class="timeline gray-section">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Como Funciona</h1>
+            <p>Depois que cadastrar o usuário e suas empresas, você seguirá o caminho abaixo.  </p>
+        </div>
+    </div>
+    <div class="row features-block">
+
+        <div class="col-lg-12">
+            <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-plus"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Importação do Balancete</h2>
+                        <p>Importe o Balancete Contábil exportado pelo seu Contador. Peça a ele que exporte o arquivo em .CSV, com ponto e vírgula, e em colunas.
+                        </p>
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Today <br/> <small>Dec 24</small> </span> -->
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-link"></i>
+
+                        <!-- <i class="fa fa-file-text"></i> -->
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>De/Para</h2>
+                        <p>Depois que importarmos o seu Balancete Contábil, você fará um De/Para classificando sua conta ou contas contábeis para o plano de contas sugerido pelo InvoO. Depois de feito uma vez, o usuário só terá que fazer novamente se uma nova conta for adicionada no Balancete Contábil.</p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Tomorrow <br/> <small>Dec 26</small> </span> -->
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-exclamation"></i>
+
+                        <!-- <i class="fa fa-cogs"></i> -->
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Exceções</h2>
+                        <p>Após a Importação e o De/Para, o InvoO fará uma análise de consistência das informações contábeis e apontará todas as inconsistências ("exceções") identificadas no Balancete Contábil (e.g.; Ativo e Passivo com saldos diferentes). </p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Monday <br/> <small>Jan 02</small> </span> -->
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-plus"></i>
+
+                        <!-- <i class="fa fa-file-text"></i> -->
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Re-Importação do Balancete</h2>
+                        <p>Após seu Contador tratar e corrigir as exceções, re-importe o Balancete Contábil.
+                        </p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Tomorrow <br/> <small>Dec 26</small> </span> -->
+                    </div>
+                </div>
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-file-text"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Demonstrações Financeiras</h2>
+                        <p>Não havendo mais exceções no Balancete Contábil importado, o InvoO gerará as Demonstrações Financeiras. </p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Monday <br/> <small>Jan 02</small> </span> -->
+                    </div>
+                </div>
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-file-text"></i> -->
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Dashboard de Indicadores e Gráficos</h2>
+                        <p>O Dashboard com Indicadores e Gráficos é gerado pelo InvoO para você acompanhar a performance econômico-financeira da sua empresa ou empresas.
+                        </p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Tomorrow <br/> <small>Dec 26</small> </span> -->
+                    </div>
+                </div>
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Exportar Relatórios</h2>
+                        <p>Exporte seus relatórios, indicadores e gráficos no formato Excel ou Adobe Acrobat (.pdf). </p>
+
+                        <!-- <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                        <span class="vertical-date"> Monday <br/> <small>Jan 02</small> </span> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<!-- <section id="testimonials" class="navy-section testimonials" style="margin-top: 0">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center wow zoomIn">
+            <i class="fa fa-comment big-icon"></i>
+            <h1>
+                What our users say
+            </h1>
+            <div class="testimonials-text">
+                <i>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."</i>
+            </div>
+            <small>
+                <strong>12.02.2014 - Andy Smith</strong>
+            </small>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section class="comments gray-section" style="margin-top: 0">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>What our partners say</h1>
+            <p>Donec sed odio dui. Etiam porta sem malesuada. </p>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-4">
+            <div class="bubble">
+                "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="float-left">
+                    <img alt="image" src="<%= image_path('landing/avatar3.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Andrew Williams
+                    </div>
+                    <small class="text-muted">Company X from California</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bubble">
+                "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="float-left">
+                    <img alt="image" src="<%= image_path('landing/avatar1.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Andrew Williams
+                    </div>
+                    <small class="text-muted">Company X from California</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bubble">
+                "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            </div>
+            <div class="comments-avatar">
+                <a href="" class="float-left">
+                    <img alt="image" src="<%= image_path('landing/avatar2.jpg') %>">
+                </a>
+                <div class="media-body">
+                    <div class="commens-name">
+                        Andrew Williams
+                    </div>
+                    <small class="text-muted">Company X from California</small>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+</section> -->
+
+<!-- <section class="features">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>More and more extra great feautres</h1>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-lg-offset-1 features-text">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <i class="fa fa-bar-chart big-icon float-right"></i>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+        </div>
+        <div class="col-lg-5 features-text">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <i class="fa fa-bolt big-icon float-right"></i>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-lg-offset-1 features-text">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <i class="fa fa-clock-o big-icon float-right"></i>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+        </div>
+        <div class="col-lg-5 features-text">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <i class="fa fa-users big-icon float-right"></i>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+        </div>
+    </div>
+</div>
+
+</section> -->
+<section id="pricing" class="pricing">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Preços</h1>
+            <p>Os preços de cada um dos pacotes varia de acorodo com o volume de dados que processamos e armazenamos para você.</p>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-lg-4 wow zoomIn">
+            <ul class="pricing-plan list-unstyled">
+                <li class="pricing-title">
+                    Básico
+                </li>
+                <li class="pricing-desc">
+                    Para start-ups e pequenas empresas com um baixo volume de informações contábeis,
+                </li>
+                <li class="pricing-price">
+                    <span>$16</span> / month
+                </li>
+                <li>
+                    Dashboards
+                </li>
+                <li>
+                    Projects view
+                </li>
+                <li>
+                    Contacts
+                </li>
+                <li>
+                    Calendar
+                </li>
+                <li>
+                    AngularJs
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                </li>
+            </ul>
+        </div>
+ -->
+        <div class=single_card>
+          <div class="col-lg-12 wow zoomIn">
+            <ul class="pricing-plan list-unstyled selected">
+                <li class="pricing-title">
+                    Standard
+                </li>
+                <li class="pricing-desc">
+                    Ideal para Start-Ups e Pequenas Empresas.
+                </li>
+                <li class="pricing-price">
+                    <span>R$399,99</span> / mês
+                </li>
+                <li>
+                    Balanço Patrimonial e DRE
+                </li>
+                <li>
+                    Indicadores Padrão
+                </li>
+                <li>
+                    Gráficos Padrão
+                </li>
+                <li>
+                    Número Ilimitado de Usuários
+                </li>
+
+                <li>
+                    <strong class="gb">Até 1GB</strong>
+                </li>
+                <li class="plan-action p-3 mb-3">
+                    <%= link_to 'CONTRATAR', new_user_registration_path, class: "btn btn-primary btn-xs"%>
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 wow zoomIn">
+            <ul class="pricing-plan list-unstyled">
+                <li class="pricing-title">
+                    Premium
+                </li>
+                <li class="pricing-desc">
+                    Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.
+                </li>
+                <li class="pricing-price">
+                    <span>$160</span> / month
+                </li>
+                <li>
+                    Dashboards
+                </li>
+                <li>
+                    Projects view
+                </li>
+                <li>
+                    Contacts
+                </li>
+                <li>
+                    Calendar
+                </li>
+                <li>
+                    AngularJs
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    <div class="row m-t-lg">
+        <div class="col-lg-12 text-center m-t-lg">
+            <p class=container>Os valores dos pacotes podem sofrer alteração de acordo com o Contrato de Prestação de Serviços. <span class="navy">Consumo de Armazenamento de Dados:</span> O pacote contratado será alterado automaticamente caso o consumo de armazenamento de dados seja superior àquele contratado pelo cliente.</p>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="contact" class="gray-section contact">
+<div class="container">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Contato</h1>
+            <p>Entre em contato conosco. Queremos conversar com você e te contar como o InvoO pode te ajudar.</p>
+        </div>
+    </div>
+    <div class="row m-b-lg justify-content-center">
+        <div class="col-lg-3 ">
+            <address>
+                <strong><span class="navy">InvoO</span></strong><br/>
+                Avenida Raja Gabaglia, 2000<br/>  Sala 305 - Prédio 2<br/>Belo Horizonte, Brasil <br/> 30.494-170<br/>
+                <!-- <abbr title="Phone">P:</abbr> (123) 456-7890 -->
+            </address>
+        </div>
+        <div class="col-lg-4">
+            <!-- <p class="text-color">
+                Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
+            </p> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <a href="mailto:info@invoo.me" class="btn btn-primary"><i class="fa fa-envelope-o"></i> E-mail</a>
+            <p class="m-t-sm">
+                Nos acompanhe nas mídias sociais
+            </p>
+            <ul class="list-inline social-icon">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center m-t-lg m-b-lg">
+            <p><strong> InvoO &copy; 2019.</strong><br/> Todos os direitos reservados.</p>
+        </div>
+    </div>
+</div>
+</section>
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('body').addClass('landing-page');
+    $('body').attr('id', 'page-top');
+
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 80
+    });
+
+    // Page scrolling feature
+    $('a.page-scroll').bind('click', function(event) {
+        var link = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(link.attr('href')).offset().top - 50
+        }, 500);
+        event.preventDefault();
+        $("#navbar").collapse('hide');
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+
+
+});
+
+</script>
+
+<% end %>
