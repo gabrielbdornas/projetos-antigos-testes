@@ -20,6 +20,38 @@ class OutSynthesesController < ApplicationController
     def feito
     end
 
+    def pdf_importer
+      # file = 'HJK_AIHS_REJEITADAS.pdf'
+      file = 'hjk_AIHS REJEITADAS (1).pdf'
+      reader = PDF::Reader.new(file)
+      a = 0
+      reader.pages.each do |page|
+        # puts page.fonts
+        # puts "#{a} - #{page.text}"
+        lines = page.text.split("\n\n")
+        lines.delete("")
+        puts reader.page_count
+        lines.each do |line|
+          if line.split("\n").count > 1 && line.split("\n")[0] != ""
+            puts "Maior que um"
+            p line
+          else
+            puts "igual a um"
+            p line
+            text_importation = line.split("\n")
+            text_importation.delete("").join
+            # Importation.create(
+            #   aih: text_importation.split('')[0..14],
+            #   id_principal: text_importation.split('')[15..28]
+            #   )
+          end
+          # p line
+          # a+=1
+        end
+        # puts page.raw_content
+      end
+    end
+
     def abrir_arquivo
       VpnImportation.delete_all
       all_text_files = Dir.glob "txt_files/*.txt"
