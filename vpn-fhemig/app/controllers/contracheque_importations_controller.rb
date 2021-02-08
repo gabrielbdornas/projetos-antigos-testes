@@ -36,6 +36,46 @@ class ContrachequeImportationsController < ApplicationController
 
   end
 
+  def guia_inss
+    # portal do servidor
+    options = Selenium::WebDriver::Chrome::Options.new
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--disable-popup-blocking')
+    options.add_argument('--disable-translate')
+    options.add_argument("--incognito")
+    driver = Selenium::WebDriver.for :chrome, options: options
+    driver.navigate.to 'http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/calcContribuicoesCI/filiadosApos/selecionarOpcoesCalculoApos.xhtml'
+    # http://3qilabs.com/how_to/how-to-zoom-in-zoom-out-using-selenium-webdriver/
+    driver.execute_script "document.body.style['-webkit-transform'] = \"scale(2.5)\";"
+    # https://snippets.aktagon.com/snippets/505-how-to-capture-screenshots-with-selenium-ruby-and-firefox
+    driver.save_screenshot('screenshot.png')
+    recapcha = recapcha(driver.save_screenshot('screenshot.png'))
+    driver.execute_script "document.body.style['-webkit-transform'] = \"scale(1)\";"
+    driver.find_element(id: "captcha_campo_resposta").send_keys recapcha.text
+    driver.find_element(id: "opcoesCalcContribuicoesCI:nome").click()
+    driver.find_element(id: "opcoesCalcContribuicoesCI:nome").send_keys '106.05052.503'
+    driver.find_element(id: "opcoesCalcContribuicoesCI:botaoConfirmar").click()
+    driver.find_element(name: "formDadosCadastraisCalcContribuicoesCI:j_id38").click()
+    driver.find_element(name: "informarSalariosContribuicaoDomestico:gridSelectSalarios:0:j_id38").send_keys "01/2021"
+    driver.find_element(name: "informarSalariosContribuicaoDomestico:gridSelectSalarios:0:j_id40").send_keys "1.100,00"
+    driver.find_element(id: "informarSalariosContribuicaoDomestico:dataPag").click()
+    driver.find_element(id: "informarSalariosContribuicaoDomestico:dataPag").clear()
+    driver.find_element(id: "informarSalariosContribuicaoDomestico:dataPag").send_keys "08/02/2021"
+    driver.find_element(name: "informarSalariosContribuicaoDomestico:j_id50").click()
+    driver.find_element(name: "gridListSalariosCalculo:selected").click()
+    driver.find_element(name: "formExibirDiscriminativoCI:j_id66").click()
+    # driver.find_element(xpath: "//input[@type='submit' and @value='Consultar']").click()
+
+    # sisad
+
+    # driver.navigate.to 'https://www.sisad.mg.gov.br/sisad/auxiliares/servidor.do'
+    # sleep 1
+    # driver.find_element(id: 'login').send_keys '7522667'
+    # driver.find_element(id: 'senha').send_keys 'colocar_senha_para_acessar'
+    # driver.find_element(class: 'formBotao').click
+
+  end
+
   def consulta_celular
     driver = Selenium::WebDriver.for :chrome
     driver.navigate.to 'https://www.consultaoperadora.com.br/site2015/resposta.php'

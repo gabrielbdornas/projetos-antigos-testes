@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'out_syntheses/import', to: 'out_syntheses#import'
   get 'out_syntheses/controle', to: 'out_syntheses#controle'
   get 'contracheque_importations/portal_servidores_open', to: 'contracheque_importations#portal_servidores_open'
+  get 'guia_inss', to: 'contracheque_importations#guia_inss'
   get 'contracheque_importations/image_mechanize', to: 'contracheque_importations#image_mechanize'
   get 'out_syntheses/pdf_importer', to: 'out_syntheses#pdf_importer'
 end
