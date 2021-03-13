@@ -29,7 +29,8 @@ ActiveRecord::Schema.define(version: 2019_12_04_134335) do
 
   create_table "companies", force: :cascade do |t|
     t.string "cnpj"
-    t.string "company_name"
+    t.string "formal_name"
+    t.string "fantasy_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "report_system"
